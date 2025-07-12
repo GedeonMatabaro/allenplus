@@ -1,0 +1,210 @@
+{
+    "LanguageSelect": {
+      "selectLocale": "Select a language",
+      "languageEnglish": "English",
+      "languageSpanish": "Español",
+      "languageChinese": "中文",
+      "languageFrench": "Français",
+      "languageGerman": "Deutsch",
+      "languageJapanese": "日本語",
+      "languagePortuguese": "Português",
+      "languageRussian": "Русский",
+      "languageArabic": "العربية",
+      "languageHindi": "हिन्दी",
+      "languageKorean": "한국어",
+      "languageItalian": "Italiano"
+  },
+  "NotFound": {
+      "heading": "Page Not Found",
+      "description": "The page you are looking for does not exist.",
+      "goHome": "Go to Home"
+  },
+  
+  "Footer": {
+    "tagline": "Aid Life Learn Environment",
+    "description": "Empowering communities through sustainable development, climate action, and humanitarian support in Eastern DRC and beyond.",
+    "email": "infosallenplus@gmail.com",
+    "address": "DRC, North-Kivu, Goma, Circulaire 219",
+    "quickLinks": {
+      "title": "Quick Links",
+      "about": "About Us",
+      "programs": "Programs",
+      "impact": "Our Impact",
+      "partners": "Partners",
+      "futureGoals": "Future Goals"
+    },
+    "getInvolved": {
+      "title": "Get Involved",
+      "contact": "Contact Us",
+      "partner": "Partner With Us",
+      "volunteer": "Volunteer",
+      "donate": "Donate"
+    },
+    "copyright": "© {year} ALLEN+ - All Rights Reserved. Empowering communities for a sustainable future.",
+    "developedBy": "Developed by"
+  },
+  "LandingPage": {
+    "AboutSection": {
+      "imageAlt": "ALLEN+ team and community members working together",
+      "missionTitle": "Our Mission",
+      "missionDescription": "Empowering Communities",
+      "title": "Who We Are: Our Mission &",
+      "titleHighlight": " Story",
+      "description": "ALLEN+ empowers youth and vulnerable communities through innovative, practice-driven programs in climate action, sustainable agriculture, and humanitarian support. We believe in community-led solutions that create lasting change, ensuring no one is left behind in building a sustainable future for Eastern DRC and beyond.",
+      "buttonText": "Learn More About Us"
+    },
+    "CallToActionSection": {
+      "imageAlt": "Diverse group of volunteers and community members working together",
+      "title": "Join Us: Make a Difference with",
+      "titleHighlight": "ALLEN+",
+      "description": "Every partnership, every donation, every volunteer hour creates ripple effects of positive change across Eastern DRC. Be part of building a sustainable future for communities that need it most.",
+      "categories": {
+        "partner": {
+          "title": "Partner",
+          "description": "Collaborate on programs"
+        },
+        "support": {
+          "title": "Support",
+          "description": "Fund sustainable change"
+        },
+        "volunteer": {
+          "title": "Volunteer",
+          "description": "Share your expertise"
+        }
+      },
+      "buttonGetInvolved": "Get Involved",
+      "buttonExploreWork": "Explore Our Work"
+    },
+    "FutureGoalsSection": {
+      "title": "Our Vision Ahead: Building for",
+      "titleHighlight": " Tomorrow",
+      "description": "We're creating a comprehensive digital platform to connect all our beneficiaries, share online courses, provide climate news for farmers, and partner with stakeholders to amplify our programs and reach even more communities across Eastern DRC and beyond.",
+      "impactTitle": "Expected Impact",
+      "impactDescription": "10x increase in community reach through digital connectivity",
+      "imageAlt": "Digital connectivity and future technology empowering communities",
+      "buttonText": "Discover Our Future Plans"
+    },
+    "HeroSection": {
+      "imageAlt": "Community members working together on environmental projects",
+      "title": "Empowering Changemakers for a",
+      "titleHighlight": "Sustainable Future",
+      "description": "AID LIFE LEARN ENVIRONMENT: Nurturing Growth, Fostering Resilience, and Inspiring Change in Eastern DRC and Beyond.",
+      "buttonText": "Learn More About Our Work"
+    },
+    "ImpactSection": {
+      "title": "Our Impact: Making a",
+      "titleHighlight": " Tangible Difference",
+      "description": "From empowering 10,000+ community members to representing Eastern DRC at global climate conferences, our work creates ripple effects of positive change. We've supported over 1,500 children, trained 357 youth climate activists, and earned recognition from the UN Environment Programme for our dedication to sustainable development.",
+      "stats": {
+        "cop": {
+          "title": "COP 29 & 16",
+          "description": "Global Advocacy"
+        },
+        "unRecognition": {
+          "title": "UN Recognition",
+          "description": "Certificate of Appreciation"
+        }
+      },
+      "imageAlt": "Large community gathering showing ALLEN+ impact",
+      "awardTitle": "UN Recognized",
+      "awardDescription": "Environmental Excellence",
+      "livesTouched": {
+        "title": "10,000+",
+        "description": "Lives Touched"
+      },
+      "buttonText": "View Our Full Impact"
+    },
+    "PartnersSection": {
+      "title": "Our Partners:",
+      "titleHighlight": "Stronger Together",
+      "description": "Collaborating with international organizations, local NGOs, and government agencies to amplify our impact and create sustainable change across Eastern DRC.",
+      "partnerAlt": "Partner {index} logo",
+      "categories": {
+        "international": {
+          "title": "International Organizations",
+          "description": "Global expertise and resources"
+        },
+        "local": {
+          "title": "Local NGOs",
+          "description": "Grassroots community understanding"
+        },
+        "government": {
+          "title": "Government Agencies",
+          "description": "Policy implementation support"
+        }
+      },
+      "buttonText": "Meet All Our Partners"
+    },
+    "ProgramsSection": {
+      "title": "Our Programs: Driving",
+      "titleHighlight": " Sustainable Change",
+      "description": "Three core programs creating measurable impact across Eastern DRC",
+      "programs": {
+        "greenYouthForum": {
+          "title": "Green Youth Forum",
+          "description": "Empowering 100+ youth through climate dialogues and innovative solutions at local and international levels.",
+          "alt": "Youth engaged in climate action discussions"
+        },
+        "solidarity": {
+          "title": "Solidarity +",
+          "description": "Supporting 1,500+ children in IDP camps, building resilience and sparking hope through community solidarity.",
+          "alt": "Children receiving support in IDP camps"
+        },
+        "innovationHub": {
+          "title": "Innovation Hub",
+          "description": "Driving sustainable agriculture and renewable energy solutions through practice-centered programs.",
+          "alt": "Sustainable agriculture and renewable energy projects"
+        },
+        "womenUpDRC": {
+          "title": "Women Up DRC",
+          "description": "We have been able to engage more than 300 Internally Displaced Women in the fight against climate change engaged in tree planting activities, recycling and agricultural practices.",
+          "alt": "Internally Displaced Women participating in climate action"
+        },
+        "youthClimateAcademy": {
+          "title": "Youth Climate Academy",
+          "description": "Training 357 youth climate activists, fostering leadership and advocacy for sustainable development.",
+          "alt": "Youth climate activists in training"
+        }
+      },
+      "buttonText": "Explore All Programs"
+    },
+    "StatisticsSection": {
+      "stats": [
+        {
+          "value": "5K+",
+          "label": "Community Members Reached",
+          "color": "green"
+        },
+        {
+          "value": "1.5K+",
+          "label": "Children Supported",
+          "color": "yellow"
+        },
+        {
+          "value": "157+",
+          "label": "Youth Climate Activists",
+          "color": "cyan"
+        },
+        {
+          "value": "205+",
+          "label": "Women Empowered",
+          "color": "purple"
+        }
+      ]
+    }
+  },
+  "Navigation": {
+    "logoAlt": "ALLEN+ Logo",
+    "tagline": "Aid Life Learn Environment",
+    "links": [
+      { "href": "/", "label": "Home" },
+      { "href": "/about", "label": "About Us" },
+      { "href": "/programs", "label": "Programs" },
+      { "href": "/impact", "label": "Our Impact" },
+      { "href": "/partners", "label": "Partners" },
+      { "href": "/future-goals", "label": "Future Goals" }
+    ],
+    "volunteer": "Volunteer",
+    "donate": "Donate"
+  }
+}

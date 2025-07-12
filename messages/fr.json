@@ -1,0 +1,212 @@
+{
+    "LanguageSelect": {
+      "selectLocale": "Selectioner une langue",
+      "languageEnglish": "English",
+      "languageSpanish": "Español",
+      "languageChinese": "中文",
+      "languageFrench": "Français",
+      "languageGerman": "Deutsch",
+      "languageJapanese": "日本語",
+      "languagePortuguese": "Português",
+      "languageRussian": "Русский",
+      "languageArabic": "العربية",
+      "languageHindi": "हिन्दी",
+      "languageKorean": "한국어",
+      "languageItalian": "Italiano"
+  },
+   "NotFound": {
+      "heading": "Page non trouvée",
+      "description": "La page que vous recherchez n'existe pas.",
+      "goHome": "Aller à l'accueil"
+  },
+  "Footer": {
+    "tagline": "Aid Life Learn Environment",
+    "description": "Renforcer les communautés grâce au développement durable, à l'action climatique et au soutien humanitaire dans l'est de la RDC et au-delà.",
+    "email": "infosallenplus@gmail.com",
+    "address": "RDC, Nord-Kivu, Goma, Circulaire 219",
+    "quickLinks": {
+      "title": "Liens rapides",
+      "about": "À propos de nous",
+      "programs": "Programmes",
+      "impact": "Notre impact",
+      "partners": "Partenaires",
+      "futureGoals": "Objectifs futurs"
+    },
+    "getInvolved": {
+      "title": "Impliquez-vous",
+      "contact": "Contactez-nous",
+      "partner": "Collaborez avec nous",
+      "volunteer": "Bénévolat",
+      "donate": "Faire un don"
+    },
+    "copyright": "© {year} ALLEN+ - Tous droits réservés. Renforcer les communautés pour un avenir durable.",
+    "developedBy": "Développé par"
+  },
+  "LandingPage": {
+    "AboutSection": {
+      "imageAlt": "Équipe ALLEN+ et membres de la communauté travaillant ensemble",
+      "missionTitle": "Notre mission",
+      "missionDescription": "Renforcer les communautés",
+      "title": "Qui nous sommes : Notre mission &",
+      "titleHighlight": " Histoire",
+      "description": "ALLEN+ renforce les jeunes et les communautés vulnérables à travers des programmes innovants axés sur l'action climatique, l'agriculture durable et le soutien humanitaire. Nous croyons en des solutions dirigées par la communauté qui créent un changement durable, garantissant que personne ne soit laissé pour compte dans la construction d'un avenir durable pour l'est de la RDC et au-delà.",
+      "buttonText": "En savoir plus sur nous"
+    },
+    "CallToActionSection": {
+      "imageAlt": "Groupe diversifié de bénévoles et membres de la communauté travaillant ensemble",
+      "title": "Rejoignez-nous : Faites la différence avec",
+      "titleHighlight": "ALLEN+",
+      "description": "Chaque partenariat, chaque don, chaque heure de bénévolat crée des effets d'entraînement de changement positif à travers l'est de la RDC. Participez à la construction d'un avenir durable pour les communautés qui en ont le plus besoin.",
+      "categories": {
+        "partner": {
+          "title": "Partenaire",
+          "description": "Collaborer sur des programmes"
+        },
+        "support": {
+          "title": "Soutien",
+          "description": "Financer un changement durable"
+        },
+        "volunteer": {
+          "title": "Bénévole",
+          "description": "Partager votre expertise"
+        }
+      },
+      "buttonGetInvolved": "S'impliquer",
+      "buttonExploreWork": "Découvrir notre travail"
+    },
+    "FutureGoalsSection": {
+      "title": "Notre vision pour l'avenir : Construire pour",
+      "titleHighlight": " Demain",
+      "description": "Nous créons une plateforme numérique complète pour connecter tous nos bénéficiaires, partager des cours en ligne, fournir des nouvelles sur le climat pour les agriculteurs et collaborer avec les parties prenantes pour amplifier nos programmes et atteindre encore plus de communautés à travers l'est de la RDC et au-delà.",
+      "impactTitle": "Impact attendu",
+      "impactDescription": "Augmentation de 10 fois de la portée communautaire grâce à la connectivité numérique",
+      "imageAlt": "Connectivité numérique et technologies futures renforçant les communautés",
+      "buttonText": "Découvrir nos plans futurs"
+    },
+    "HeroSection": {
+      "imageAlt": "Membres de la communauté travaillant ensemble sur des projets environnementaux",
+      "title": "Renforcer les acteurs du changement pour un",
+      "titleHighlight": "Avenir durable",
+      "description": "AID LIFE LEARN ENVIRONMENT: Nourrir la croissance, renforcer la résilience et inspirer le changement dans l'est de la RDC et au-delà.",
+      "buttonText": "En savoir plus sur notre travail"
+    },
+    "ImpactSection": {
+      "title": "Notre impact : Faire une",
+      "titleHighlight": " Différence tangible",
+      "description": "De l'autonomisation de plus de 10 000 membres de la communauté à la représentation de l'est de la RDC lors de conférences climatiques mondiales, notre travail crée des effets d'entraînement de changement positif. Nous avons soutenu plus de 1 500 enfants, formé 357 jeunes activistes climatiques et obtenu une reconnaissance du Programme des Nations Unies pour l'environnement pour notre engagement envers le développement durable.",
+      "stats": {
+        "cop": {
+          "title": "COP 29 & 16",
+          "description": "Plaidoyer mondial"
+        },
+        "unRecognition": {
+          "title": "Reconnaissance de l'ONU",
+          "description": "Certificat de reconnaissance"
+        }
+      },
+      "imageAlt": "Rassemblement communautaire important montrant l'impact d'ALLEN+",
+      "awardTitle": "Reconnu par l'ONU",
+      "awardDescription": "Excellence environnementale",
+      "livesTouched": {
+        "title": "10 000+",
+        "description": "Vies touchées"
+      },
+      "buttonText": "Voir notre impact complet"
+    },
+    "PartnersSection": {
+      "title": "Nos partenaires :",
+      "titleHighlight": "Plus forts ensemble",
+      "description": "Collaborer avec des organisations internationales, des ONG locales et des agences gouvernementales pour amplifier notre impact et créer un changement durable à travers l'est de la RDC.",
+      "partnerAlt": "Logo du partenaire {index}",
+      "categories": {
+        "international": {
+          "title": "Organisations internationales",
+          "description": "Expertise et ressources mondiales"
+        },
+        "local": {
+          "title": "ONG locales",
+          "description": "Compréhension communautaire à la base"
+        },
+        "government": {
+          "title": "Agences gouvernementales",
+          "description": "Soutien à la mise en œuvre des politiques"
+        }
+      },
+      "buttonText": "Rencontrer tous nos partenaires"
+    },
+    
+    "ProgramsSection": {
+      "title": "Nos programmes : Conduire un",
+      "titleHighlight": " Changement durable",
+      "description": "Trois programmes phares créant un impact mesurable à travers l'est de la RDC",
+      "programs": {
+        "greenYouthForum": {
+          "title": "Forum des jeunes verts",
+          "description": "Renforcer plus de 100 jeunes à travers des dialogues climatiques et des solutions innovantes aux niveaux local et international.",
+          "alt": "Jeunes engagés dans des discussions sur l'action climatique"
+        },
+        "solidarity": {
+          "title": "Solidarité +",
+          "description": "Soutenir plus de 1 500 enfants dans les camps de déplacés internes, renforcer la résilience et susciter l'espoir grâce à la solidarité communautaire.",
+          "alt": "Enfants recevant du soutien dans les camps de déplacés internes"
+        },
+        "innovationHub": {
+          "title": "Centre d'innovation",
+          "description": "Promouvoir l'agriculture durable et les solutions d'énergie renouvelable à travers des programmes axés sur la pratique.",
+          "alt": "Projets d'agriculture durable et d'énergie renouvelable"
+        },
+        "womenUpDRC": {
+          "title": "Women Up DRC",
+          "description": "Nous avons engagé plus de 300 femmes déplacées internes dans la lutte contre le changement climatique, participant à des activités de plantation d'arbres, de recyclage et de pratiques agricoles.",
+          "alt": "Femmes déplacées internes participant à l'action climatique"
+        },
+        "youthClimateAcademy": {
+          "title": "Académie climatique des jeunes",
+          "description": "Former 357 jeunes activistes climatiques, favorisant le leadership et le plaidoyer pour le développement durable.",
+          "alt": "Jeunes activistes climatiques en formation"
+        }
+      },
+      "buttonText": "Découvrir tous les programmes"
+    },
+    "StatisticsSection": {
+      "stats": [
+        {
+          "value": "5K+",
+          "label": "Membres de la communauté atteints",
+          "color": "green"
+        },
+        {
+          "value": "1.5K+",
+          "label": "Enfants soutenus",
+          "color": "yellow"
+        },
+        {
+          "value": "157+",
+          "label": "Jeunes activistes climatiques",
+          "color": "cyan"
+        },
+        {
+          "value": "205+",
+          "label": "Femmes autonomisées",
+          "color": "purple"
+        }
+      ]
+    }
+  },
+  "Navigation": {
+    "logoAlt": "Logo ALLEN+",
+    "tagline": "Aid Life Learn Environment",
+    "links": [
+      { "href": "/", "label": "Accueil" },
+      { "href": "/about", "label": "À propos de nous" },
+      { "href": "/programs", "label": "Programmes" },
+      { "href": "/impact", "label": "Notre impact" },
+      { "href": "/partners", "label": "Partenaires" },
+      { "href": "/future-goals", "label": "Objectifs futurs" }
+    ],
+    "volunteer": "Bénévole",
+    "donate": "Faire un don"
+  }
+  
+
+}

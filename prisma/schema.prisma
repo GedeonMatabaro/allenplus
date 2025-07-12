@@ -1,0 +1,379 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["fullTextSearchPostgres", "driverAdapters"]
+}
+
+datasource db {
+  provider  = "postgresql"
+  url      = env("DATABASE_URL")// uses connection pooling
+}
+
+// User model for all users (creators, donors, partners, admins)
+model User {
+  id            String       @id @default(cuid())
+  username      String       @unique
+  displayName   String
+  email         String       @unique
+  passwordHash  String?
+  googleId      String?      @unique // For Google OAuth
+  role          Role         @default(MEMBER) // Roles: MEMBER, CREATOR, DONOR, PARTNER, ADMIN
+  isActive      Boolean      @default(true) // For account status (active/suspended)
+  avatarUrl     String?
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+
+  // Authentication
+  sessions           Session[]
+  passwordResetCode PasswordResetCode[]
+  emailVerification EmailVerification[]
+
+  // Content
+  posts         Post[]        @relation("AuthorPosts") // Blog posts or news
+  announcements Announcement[] // Announcements posted by creators/admins
+  microPosts    MicroPost[]   @relation("AuthorMicroPosts") // Microblogging posts
+  comments      Comment[]     // Comments on posts or micro-posts
+  likes         Like[]        // Likes on posts or micro-posts
+
+  // Donor/Partner Portal
+  donations     Donation[]    @relation("Donor") // Donations made by the user
+  partnerships  Partnership[] @relation("Partner") // Partnerships associated with the user
+  updates       Update[]      @relation("Recipient") // Updates sent to donors/partners
+  notifications Notification[] @relation("Recipient") // Notifications for users
+  notification  Notification[]
+  update        Update[]
+  // Admin Permissions
+  permissions   Permission[]  @relation("UserPermissions") // Permissions assigned to users
+  adminActions  AdminAction[] @relation("PerformedBy") // Actions performed by admins (e.g., revoking credentials)
+  affectedAdminActions AdminAction[] @relation("AffectedUser") // Actions where this user is the affected target
+
+  @@index([username])
+  @@index([email])
+  @@map("users")
+  
+
+}
+
+// Enum for user roles
+enum Role {
+  MEMBER    // Regular user
+  CREATOR   // Can post blogs/news and announcements
+  DONOR     // Access to donor portal
+  PARTNER   // Access to partner portal
+  ADMIN     // Full access to manage users and permissions
+}
+
+// Session model for user authentication
+model Session {
+  id        String   @id @default(cuid())
+  userId    String
+  expiresAt DateTime
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("sessions")
+}
+
+// Password reset code for password recovery
+model PasswordResetCode {
+  id        String   @id @default(cuid())
+  userId    String
+  code      String   @unique
+  expiresAt DateTime
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("password_reset_codes")
+}
+
+// Email verification for user email validation
+model EmailVerification {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  code      String   // 8-digit code (e.g., "12345678")
+  expiresAt DateTime // Expires after 15 minutes
+  user      User?    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId    String?
+  createdAt DateTime @default(now())
+
+  @@map("email_verification")
+}
+
+// Blog/News posts created by creators or admins
+model Post {
+  id            String       @id @default(cuid())
+  title         String       // Post title
+  content       String       // Main content of the blog/news
+  authorId      String
+  author        User         @relation("AuthorPosts", fields: [authorId], references: [id], onDelete: Cascade)
+  visibility    Visibility   @default(PUBLIC) // PUBLIC, MEMBERS, DONORS, PARTNERS
+  attachments   Media[]      @relation("PostMedia") // Images, videos, etc.
+  comments      Comment[]    @relation("PostComments") // Comments on the post
+  likes         Like[]       @relation("PostLikes") // Likes on the post
+  notifications Notification[] @relation("PostNotifications") // Notifications related to the post
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+
+  @@index([authorId])
+  @@index([createdAt])
+  @@map("posts")
+}
+
+// Announcements for important updates
+model Announcement {
+  id            String       @id @default(cuid())
+  title         String       // Announcement title
+  content       String       // Announcement content
+  authorId      String
+  expriesAt     DateTime?    // Optional expiration date for the announcement
+  author        User         @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  visibility    Visibility   @default(PUBLIC) // PUBLIC, MEMBERS, DONORS, PARTNERS
+  attachments   Media[]      @relation("AnnouncementMedia") // Images, videos, etc.
+  notifications Notification[] @relation("AnnouncementNotifications") // Notifications for announcements
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+
+  @@index([authorId])
+  @@index([createdAt])
+  @@map("announcements")
+}
+
+// Microblogging posts with likes and comments
+model MicroPost {
+  id            String       @id @default(cuid())
+  content       String       // Short content for microblogging
+  authorId      String
+  author        User         @relation("AuthorMicroPosts", fields: [authorId], references: [id], onDelete: Cascade)
+  visibility    Visibility   @default(PUBLIC) // PUBLIC, MEMBERS, DONORS, PARTNERS
+  attachments   Media[]      @relation("MicroPostMedia") // Images, videos, etc.
+  comments      Comment[]    @relation("MicroPostComments") // Comments on the micro-post
+  likes         Like[]       @relation("MicroPostLikes") // Likes on the micro-post
+  notifications Notification[] @relation("MicroPostNotifications") // Notifications for micro-posts
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+
+  @@index([authorId])
+  @@index([createdAt])
+  @@map("micro_posts")
+}
+
+// Media model for attachments
+model Media {
+  id               String         @id @default(cuid())
+  postId           String?
+  announcementId   String?
+  microPostId      String?
+  post             Post?          @relation("PostMedia", fields: [postId], references: [id], onDelete: SetNull)
+  announcement     Announcement?  @relation("AnnouncementMedia", fields: [announcementId], references: [id], onDelete: SetNull)
+  microPost        MicroPost?     @relation("MicroPostMedia", fields: [microPostId], references: [id], onDelete: SetNull)
+  type             MediaType
+  update           Update[] @relation("UpdateMedia")
+  url              String
+  createdAt        DateTime       @default(now())
+  
+
+  @@index([postId])
+  @@index([announcementId])
+  @@index([microPostId])
+  @@map("media")
+  
+}
+
+// Enum for media types
+enum MediaType {
+  IMAGE
+  VIDEO
+  AUDIO
+  DOCUMENT // Added for NGO reports or PDFs
+}
+
+// Comments for posts and micro-posts
+model Comment {
+  id            String       @id @default(cuid())
+  content       String
+  userId        String
+  user          User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  postId        String?
+  post          Post?        @relation("PostComments", fields: [postId], references: [id], onDelete: Cascade)
+  microPostId   String?
+  microPost     MicroPost?   @relation("MicroPostComments", fields: [microPostId], references: [id], onDelete: Cascade)
+  parentId      String?      // For nested comments (replies)
+  parent        Comment?     @relation("CommentToReplies", fields: [parentId], references: [id], onDelete: Cascade)
+  replies       Comment[]    @relation("CommentToReplies")
+  likes         Like[]       @relation("CommentLikes")
+  notifications Notification[] @relation("CommentNotifications")
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+
+  @@index([postId])
+  @@index([microPostId])
+  @@index([parentId])
+  @@map("comments")
+}
+
+// Likes for posts, micro-posts, and comments
+model Like {
+  id            String       @id @default(cuid())
+  userId        String
+  user          User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  postId        String?
+  post          Post?        @relation("PostLikes", fields: [postId], references: [id], onDelete: Cascade)
+  microPostId   String?
+  microPost     MicroPost?   @relation("MicroPostLikes", fields: [microPostId], references: [id], onDelete: Cascade)
+  commentId     String?
+  comment       Comment?     @relation("CommentLikes", fields: [commentId], references: [id], onDelete: Cascade)
+  createdAt     DateTime     @default(now())
+
+  @@unique([userId, postId])
+  @@unique([userId, microPostId])
+  @@unique([userId, commentId])
+  @@index([postId])
+  @@index([microPostId])
+  @@index([commentId])
+  @@map("likes")
+}
+
+// Notifications for user interactions
+model Notification {
+  id            String           @id @default(cuid())
+  recipientId   String
+  recipient     User             @relation("Recipient", fields: [recipientId], references: [id], onDelete: Cascade)
+  issuerId      String
+  issuer        User             @relation(fields: [issuerId], references: [id], onDelete: Cascade)
+  postId        String?
+  post          Post?            @relation("PostNotifications", fields: [postId], references: [id], onDelete: Cascade)
+  microPostId   String?
+  microPost     MicroPost?       @relation("MicroPostNotifications", fields: [microPostId], references: [id], onDelete: Cascade)
+  commentId     String?
+  comment       Comment?         @relation("CommentNotifications", fields: [commentId], references: [id], onDelete: Cascade)
+  announcementId String?
+  announcement  Announcement?    @relation("AnnouncementNotifications", fields: [announcementId], references: [id], onDelete: Cascade)
+  updateId      String?
+  update        Update?          @relation("UpdateNotifications", fields: [updateId], references: [id], onDelete: Cascade)
+  type          NotificationType
+  read          Boolean          @default(false)
+  createdAt     DateTime         @default(now())
+
+  @@index([recipientId, createdAt])
+  @@map("notifications")
+}
+
+// Enum for notification types
+enum NotificationType {
+  LIKE
+  COMMENT
+  REPLY
+  ANNOUNCEMENT
+  UPDATE // For donor/partner updates
+  PERMISSION_CHANGE
+  ACCOUNT_STATUS_CHANGE
+}
+
+// Enum for visibility settings
+enum Visibility {
+  PUBLIC    // Visible to everyone
+  MEMBERS   // Visible to registered users
+  DONORS    // Visible to donors only
+  PARTNERS  // Visible to partners only
+  ADMINS    // Visible to admins only
+}
+
+// Donations made by donors
+model Donation {
+  id            String        @id @default(cuid())
+  donorId       String
+  donor         User          @relation("Donor", fields: [donorId], references: [id], onDelete: Cascade)
+  amount        Float         // Donation amount
+  currency      String        // e.g., "USD", "INR"
+  paymentMethod String        // e.g., "Credit Card", "PayPal"
+  transactionId String?       // Unique ID from payment gateway
+  status        PaymentStatus // PENDING, PAID, FAILED
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+  notes         String?       // Optional donor notes
+
+  @@index([donorId])
+  @@map("donations")
+}
+
+// Enum for payment status
+enum PaymentStatus {
+  PENDING
+  PAID
+  FAILED
+}
+
+// Partnerships for organizational partners
+model Partnership {
+  id            String   @id @default(cuid())
+  partnerId     String
+  partner       User     @relation("Partner", fields: [partnerId], references: [id], onDelete: Cascade)
+  organization  String   // Name of the partner organization
+  startDate     DateTime
+  endDate       DateTime? // Optional end date for partnership
+  status        String    // e.g., "Active", "Expired"
+  details       String?   // Additional partnership details
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  @@index([partnerId])
+  @@map("partnerships")
+}
+
+// Updates sent to donors and partners
+model Update {
+  id            String       @id @default(cuid())
+  title         String       // Update title
+  content       String       // Update content
+  authorId      String
+  author        User         @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  visibility    Visibility   @default(DONORS) // Default to donors/partners
+  attachments   Media[]      @relation("UpdateMedia")
+  recipients    User[]       @relation("Recipient") // Users who receive this update
+  notifications Notification[] @relation("UpdateNotifications")
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+
+  @@index([authorId])
+  @@index([createdAt])
+  @@map("updates")
+}
+
+// Permissions for admin-managed roles
+model Permission {
+  id          String   @id @default(cuid())
+  userId      String
+  user        User     @relation("UserPermissions", fields: [userId], references: [id], onDelete: Cascade)
+  permission  String   // e.g., "MANAGE_USERS", "POST_ANNOUNCEMENTS"
+  grantedAt   DateTime @default(now())
+  revokedAt   DateTime? // Set when permission is revoked
+
+  @@index([userId])
+  @@map("permissions")
+}
+
+// Admin actions (e.g., revoking credentials, deleting users)
+model AdminAction {
+  id            String       @id @default(cuid())
+  adminId       String
+  admin         User         @relation("PerformedBy", fields: [adminId], references: [id], onDelete: Cascade)
+  targetUserId  String?      // User affected by the action
+  targetUser    User?        @relation("AffectedUser",fields: [targetUserId], references: [id], onDelete: SetNull)
+  actionType    AdminActionType
+  details       String?      // Description of the action
+  createdAt     DateTime     @default(now())
+
+  @@index([adminId])
+  @@index([targetUserId])
+  @@map("admin_actions")
+}
+
+// Enum for admin action types
+enum AdminActionType {
+  REVOKE_CREDENTIALS
+  DELETE_USER
+  GRANT_PERMISSION
+  REVOKE_PERMISSION
+  SUSPEND_USER
+  RESTORE_USER
+}

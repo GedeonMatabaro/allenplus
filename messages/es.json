@@ -1,0 +1,209 @@
+{
+    "LanguageSelect": {
+      "selectLocale": "Seleccionar un idioma",
+      "languageEnglish": "English",
+      "languageSpanish": "Español",
+      "languageChinese": "中文",
+      "languageFrench": "Français",
+      "languageGerman": "Deutsch",
+      "languageJapanese": "日本語",
+      "languagePortuguese": "Português",
+      "languageRussian": "Русский",
+      "languageArabic": "العربية",
+      "languageHindi": "हिन्दी",
+      "languageKorean": "한국어",
+      "languageItalian": "Italiano"
+  },
+   "NotFound": {
+      "heading": "Página no encontrada",
+      "description": "La página que buscas no existe.",
+      "goHome": "Ir a Inicio"
+  },
+  "Footer": {
+    "tagline": "Aid Life Learn Environment",
+    "description": "Empoderando comunidades a través del desarrollo sostenible, la acción climática y el apoyo humanitario en el este de la RDC y más allá.",
+    "email": "infosallenplus@gmail.com",
+    "address": "RDC, Kivu del Norte, Goma, Circulaire 219",
+    "quickLinks": {
+      "title": "Enlaces rápidos",
+      "about": "Sobre nosotros",
+      "programs": "Programas",
+      "impact": "Nuestro impacto",
+      "partners": "Socios",
+      "futureGoals": "Objetivos futuros"
+    },
+    "getInvolved": {
+      "title": "Involúcrate",
+      "contact": "Contáctanos",
+      "partner": "Asóciate con nosotros",
+      "volunteer": "Voluntariado",
+      "donate": "Donar"
+    },
+    "copyright": "© {year} ALLEN+ - Todos los derechos reservados. Empoderando comunidades para un futuro sostenible.",
+    "developedBy": "Desarrollado por"
+  },
+  "LandingPage": {
+    "AboutSection": {
+      "imageAlt": "Equipo de ALLEN+ y miembros de la comunidad trabajando juntos",
+      "missionTitle": "Nuestra misión",
+      "missionDescription": "Empoderando comunidades",
+      "title": "Quiénes somos: Nuestra misión &",
+      "titleHighlight": " Historia",
+      "description": "ALLEN+ empodera a jóvenes y comunidades vulnerables a través de programas innovadores y prácticos en acción climática, agricultura sostenible y apoyo humanitario. Creemos en soluciones lideradas por la comunidad que crean un cambio duradero, asegurando que nadie se quede atrás en la construcción de un futuro sostenible para el este de la RDC y más allá.",
+      "buttonText": "Conoce más sobre nosotros"
+    },
+    "CallToActionSection": {
+      "imageAlt": "Grupo diverso de voluntarios y miembros de la comunidad trabajando juntos",
+      "title": "Únete: Haz la diferencia con",
+      "titleHighlight": "ALLEN+",
+      "description": "Cada asociación, cada donación, cada hora de voluntariado crea efectos en cadena de cambio positivo en el este de la RDC. Sé parte de la construcción de un futuro sostenible para las comunidades que más lo necesitan.",
+      "categories": {
+        "partner": {
+          "title": "Asociarse",
+          "description": "Colaborar en programas"
+        },
+        "support": {
+          "title": "Apoyar",
+          "description": "Financiar un cambio sostenible"
+        },
+        "volunteer": {
+          "title": "Voluntario",
+          "description": "Comparte tu experiencia"
+        }
+      },
+      "buttonGetInvolved": "Involúcrate",
+      "buttonExploreWork": "Explora nuestro trabajo"
+    },
+    "FutureGoalsSection": {
+      "title": "Nuestra visión para el futuro: Construyendo para",
+      "titleHighlight": " Mañana",
+      "description": "Estamos creando una plataforma digital integral para conectar a todos nuestros beneficiarios, compartir cursos en línea, proporcionar noticias climáticas para agricultores y asociarnos con partes interesadas para amplificar nuestros programas y llegar a más comunidades en el este de la RDC y más allá.",
+      "impactTitle": "Impacto esperado",
+      "impactDescription": "Aumento de 10 veces en el alcance comunitario a través de la conectividad digital",
+      "imageAlt": "Conectividad digital y tecnologías futuras empoderando comunidades",
+      "buttonText": "Descubre nuestros planes futuros"
+    },
+    "HeroSection": {
+      "imageAlt": "Miembros de la comunidad trabajando juntos en proyectos ambientales",
+      "title": "Empoderando a los agentes de cambio para un",
+      "titleHighlight": "Futuro sostenible",
+      "description": "AID LIFE LEARN ENVIRONMENT: Fomentando el crecimiento, fortaleciendo la resiliencia e inspirando el cambio en el este de la RDC y más allá.",
+      "buttonText": "Conoce más sobre nuestro trabajo"
+    },
+    "ImpactSection": {
+      "title": "Nuestro impacto: Marcando una",
+      "titleHighlight": " Diferencia tangible",
+      "description": "Desde empoderar a más de 10,000 miembros de la comunidad hasta representar al este de la RDC en conferencias climáticas globales, nuestro trabajo crea efectos en cadena de cambio positivo. Hemos apoyado a más de 1,500 niños, capacitado a 357 jóvenes activistas climáticos y recibido reconocimiento del Programa de las Naciones Unidas para el Medio Ambiente por nuestra dedicación al desarrollo sostenible.",
+      "stats": {
+        "cop": {
+          "title": "COP 29 y 16",
+          "description": "Defensa global"
+        },
+        "unRecognition": {
+          "title": "Reconocimiento de la ONU",
+          "description": "Certificado de agradecimiento"
+        }
+      },
+      "imageAlt": "Gran reunión comunitaria mostrando el impacto de ALLEN+",
+      "awardTitle": "Reconocido por la ONU",
+      "awardDescription": "Excelencia ambiental",
+      "livesTouched": {
+        "title": "10,000+",
+        "description": "Vidas impactadas"
+      },
+      "buttonText": "Ver nuestro impacto completo"
+    },
+    "PartnersSection": {
+      "title": "Nuestros socios:",
+      "titleHighlight": "Más fuertes juntos",
+      "description": "Colaborando con organizaciones internacionales, ONG locales y agencias gubernamentales para amplificar nuestro impacto y crear un cambio sostenible en el este de la RDC.",
+      "partnerAlt": "Logo del socio {index}",
+      "categories": {
+        "international": {
+          "title": "Organizaciones internacionales",
+          "description": "Experiencia y recursos globales"
+        },
+        "local": {
+          "title": "ONG locales",
+          "description": "Comprensión comunitaria de base"
+        },
+        "government": {
+          "title": "Agencias gubernamentales",
+          "description": "Apoyo a la implementación de políticas"
+        }
+      },
+      "buttonText": "Conoce a todos nuestros socios"
+    },
+    "ProgramsSection": {
+      "title": "Nuestros programas: Impulsando un",
+      "titleHighlight": " Cambio sostenible",
+      "description": "Tres programas principales creando un impacto medible en el este de la RDC",
+      "programs": {
+        "greenYouthForum": {
+          "title": "Foro de Jóvenes Verdes",
+          "description": "Empoderando a más de 100 jóvenes a través de diálogos climáticos y soluciones innovadoras a nivel local e internacional.",
+          "alt": "Jóvenes participando en discusiones sobre acción climática"
+        },
+        "solidarity": {
+          "title": "Solidaridad +",
+          "description": "Apoyando a más de 1,500 niños en campamentos de desplazados internos, fortaleciendo la resiliencia y encendiendo la esperanza a través de la solidaridad comunitaria.",
+          "alt": "Niños recibiendo apoyo en campamentos de desplazados internos"
+        },
+        "innovationHub": {
+          "title": "Centro de Innovación",
+          "description": "Impulsando soluciones de agricultura sostenible y energía renovable a través de programas centrados en la práctica.",
+          "alt": "Proyectos de agricultura sostenible y energía renovable"
+        },
+        "womenUpDRC": {
+          "title": "Women Up DRC",
+          "description": "Hemos involucrado a más de 300 mujeres desplazadas internas en la lucha contra el cambio climático, participando en actividades de plantación de árboles, reciclaje y prácticas agrícolas.",
+          "alt": "Mujeres desplazadas internas participando en acción climática"
+        },
+        "youthClimateAcademy": {
+          "title": "Academia Climática Juvenil",
+          "description": "Capacitando a 357 jóvenes activistas climáticos, fomentando el liderazgo y la defensa del desarrollo sostenible.",
+          "alt": "Jóvenes activistas climáticos en formación"
+        }
+      },
+      "buttonText": "Explora todos los programas"
+    },
+    "StatisticsSection": {
+      "stats": [
+        {
+          "value": "5K+",
+          "label": "Miembros de la comunidad alcanzados",
+          "color": "green"
+        },
+        {
+          "value": "1.5K+",
+          "label": "Niños apoyados",
+          "color": "yellow"
+        },
+        {
+          "value": "157+",
+          "label": "Jóvenes activistas climáticos",
+          "color": "cyan"
+        },
+        {
+          "value": "205+",
+          "label": "Mujeres empoderadas",
+          "color": "purple"
+        }
+      ]
+    }
+  },
+  "Navigation": {
+    "logoAlt": "Logo de ALLEN+",
+    "tagline": "Aid Life Learn Environment",
+    "links": [
+      { "href": "/", "label": "Inicio" },
+      { "href": "/about", "label": "Sobre nosotros" },
+      { "href": "/programs", "label": "Programas" },
+      { "href": "/impact", "label": "Nuestro impacto" },
+      { "href": "/partners", "label": "Socios" },
+      { "href": "/future-goals", "label": "Objetivos futuros" }
+    ],
+    "volunteer": "Voluntario",
+    "donate": "Donar"
+  }
+}
