@@ -197,13 +197,88 @@
     "tagline": "Aid Life Learn Environment",
     "links": [
       { "href": "/", "label": "Inicio" },
-      { "href": "/about", "label": "Sobre nosotros" },
+      { "href": "/about", "label": "Sobre" },
       { "href": "/programs", "label": "Programas" },
-      { "href": "/impact", "label": "Nuestro impacto" },
+      { "href": "/impact", "label": "Impacto" },
       { "href": "/partners", "label": "Socios" },
-      { "href": "/future-goals", "label": "Objetivos futuros" }
+      { "href": "/future-goals", "label": "Objetivos" },
+      { "href": "/contact", "label": "Contáctanos" }
     ],
     "volunteer": "Voluntario",
     "donate": "Donar"
+  },
+  "AboutPage": {
+    "HeroSection": {
+      "imageAlt": "Equipo de ALLEN+ y miembros de la comunidad trabajando juntos",
+      "title": "Nuestra historia: Empoderando comunidades,",
+      "titleHighlight": "Sosteniendo nuestro planeta",
+      "description": "Descubre la misión, visión y valores que impulsan a ALLEN+"
+    },
+    "MissionSection": {
+      "imageAlt": "Miembros de la comunidad comprometidos con el desarrollo sostenible",
+      "missionTitle": "Nuestra misión",
+      "title": "Fomentando un futuro resiliente y",
+      "titleHighlight": " Sostenible",
+      "description": "ALLEN+ (Aid Life Learn Environment) se dedica a empoderar a jóvenes y comunidades vulnerables a través de programas innovadores y prácticos en acción climática, agricultura sostenible, energía renovable y apoyo humanitario.",
+      "quote": "Asegurar que nadie se quede atrás en nuestro camino hacia la sostenibilidad."
+    },
+    "VisionSection": {
+      "imageAlt": "Visión de un futuro sostenible con comunidades prósperas",
+      "visionTitle": "Nuestra visión",
+      "title": "Comunidades empoderadas",
+      "titleHighlight": " Liderando el cambio",
+      "description": "Imaginamos un mundo donde las comunidades empoderadas lideren activamente en la creación de soluciones sostenibles para los desafíos ambientales, donde cada individuo tenga la oportunidad de prosperar y contribuir a un planeta más saludable.",
+      "quote": "Cada individuo merece la oportunidad de prosperar y contribuir a un planeta más saludable."
+    },
+    "ValuesSection": {
+      "title": "Nuestros valores fundamentales",
+      "description": "Los principios que guían cada decisión, cada programa y cada asociación",
+      "valuesAlt": "{title} en acción",
+      "values": {
+        "communityEmpowerment": {
+          "title": "Empoderamiento comunitario",
+          "description": "Creer en el poder de las comunidades locales para impulsar un cambio significativo"
+        },
+        "innovation": {
+          "title": "Innovación",
+          "description": "Fomentar soluciones creativas para desafíos ambientales complejos"
+        },
+        "sustainability": {
+          "title": "Sostenibilidad",
+          "description": "Proteger el medio ambiente para las generaciones actuales y futuras"
+        },
+        "inclusivity": {
+          "title": "Inclusividad",
+          "description": "Asegurar que los programas lleguen y beneficien a los más vulnerables"
+        },
+        "collaboration": {
+          "title": "Colaboración",
+          "description": "Trabajar con socios para amplificar nuestro impacto colectivo"
+        },
+        "actionOriented": {
+          "title": "Orientado a la acción",
+          "description": "Enfatizar la práctica directa y resultados tangibles"
+        }
+      }
+    },
+    "UniqueSection": {
+      "title": "Qué nos hace",
+      "titleHighlight": " Únicos",
+      "imageAlt": "Jóvenes liderando el cambio comunitario",
+      "points": {
+        "youthDriven": {
+          "title": "Cambio impulsado por la juventud",
+          "description": "Creemos firmemente que los jóvenes pueden impulsar el cambio, poniendo la práctica en el centro de todos los programas."
+        },
+        "localFocus": {
+          "title": "Enfoque local, impacto global",
+          "description": "Una comprensión profunda de los desafíos del este de la RDC permite soluciones sostenibles y culturalmente apropiadas."
+        },
+        "practiceDriven": {
+          "title": "Programas orientados a la práctica",
+          "description": "Cada iniciativa se traduce en un impacto en el mundo real a través de una implementación práctica."
+        } 
+      }
+    }
   }
 }

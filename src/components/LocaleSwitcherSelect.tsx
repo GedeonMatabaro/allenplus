@@ -46,12 +46,12 @@ export default function LocaleSwitcherSelect({ defaultValue, label }: Props) {
         disabled={isPending || isLoading}
       >
         <SelectTrigger
-          className="w-fit h-8 border-none bg-transparent"
+          className="w-fit h-8 border-none bg-transparent px-2"
           aria-label={label}
         >
           <SelectValue />
         </SelectTrigger>
-        <SelectContent>
+        <SelectContent className="bg-card">
           {routing.locales.map((locale) => (
             <SelectItem key={locale} value={locale}>
               {t(`${localeNames[locale]}`)}

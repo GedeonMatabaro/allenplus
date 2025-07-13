@@ -198,13 +198,88 @@
     "tagline": "Aid Life Learn Environment",
     "links": [
       { "href": "/", "label": "Home" },
-      { "href": "/about", "label": "About Us" },
+      { "href": "/about", "label": "About" },
       { "href": "/programs", "label": "Programs" },
-      { "href": "/impact", "label": "Our Impact" },
+      { "href": "/impact", "label": "Impact" },
       { "href": "/partners", "label": "Partners" },
-      { "href": "/future-goals", "label": "Future Goals" }
+      { "href": "/future-goals", "label": "Goals" },
+      { "href": "/contact", "label": "Contact" }
     ],
     "volunteer": "Volunteer",
     "donate": "Donate"
+  },
+  "AboutPage": {
+    "HeroSection": {
+      "imageAlt": "ALLEN+ team and community members working together",
+      "title": "Our Story: Empowering Communities,",
+      "titleHighlight": "Sustaining Our Planet",
+      "description": "Discover the mission, vision, and values that drive ALLEN+ forward"
+    },
+    "MissionSection": {
+      "imageAlt": "Community members engaged in sustainable development",
+      "missionTitle": "Our Mission",
+      "title": "Fostering a Resilient and",
+      "titleHighlight": " Sustainable Future",
+      "description": "ALLEN+ (Aid Life Learn Environment) is dedicated to empowering youth and vulnerable communities through innovative, practice-driven programs in climate action, sustainable agriculture, renewable energy, and humanitarian support.",
+      "quote": "Ensuring no one is left behind in our journey toward sustainability."
+    },
+    "VisionSection": {
+      "imageAlt": "Vision of sustainable future with thriving communities",
+      "visionTitle": "Our Vision",
+      "title": "Empowered Communities",
+      "titleHighlight": " Leading Change",
+      "description": "We envision a world where empowered communities actively lead in creating sustainable solutions for environmental challenges, where every individual has the opportunity to thrive and contribute to a healthier planet.",
+      "quote": "Every individual deserves the opportunity to thrive and contribute to a healthier planet."
+    },
+    "ValuesSection": {
+      "title": "Our Core Values",
+      "description": "The principles that guide every decision, every program, and every partnership",
+      "valuesAlt": "{title} in action",
+      "values": {
+        "communityEmpowerment": {
+          "title": "Community Empowerment",
+          "description": "Believing in the power of local communities to drive meaningful change"
+        },
+        "innovation": {
+          "title": "Innovation",
+          "description": "Fostering creative solutions to complex environmental challenges"
+        },
+        "sustainability": {
+          "title": "Sustainability",
+          "description": "Protecting the environment for current and future generations"
+        },
+        "inclusivity": {
+          "title": "Inclusivity",
+          "description": "Ensuring programs reach and benefit the most vulnerable"
+        },
+        "collaboration": {
+          "title": "Collaboration",
+          "description": "Working with partners to amplify our collective impact"
+        },
+        "actionOriented": {
+          "title": "Action-Oriented",
+          "description": "Emphasizing hands-on practice and tangible results"
+        }
+      }
+    },
+    "UniqueSection": {
+      "title": "What Makes Us",
+      "titleHighlight": " Unique",
+      "imageAlt": "Young people leading community change",
+      "points": {
+        "youthDriven": {
+          "title": "Youth-Driven Change",
+          "description": "We firmly believe young people can drive change, putting practice at the center of all programs."
+        },
+        "localFocus": {
+          "title": "Local Focus, Global Impact",
+          "description": "Deep understanding of Eastern DRC challenges enables culturally appropriate, sustainable solutions."
+        },
+        "practiceDriven": {
+          "title": "Practice-Driven Programs",
+          "description": "Every initiative translates into real-world impact through hands-on implementation."
+        }
+      }
+    }
   }
 }

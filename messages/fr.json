@@ -198,14 +198,88 @@
     "tagline": "Aid Life Learn Environment",
     "links": [
       { "href": "/", "label": "Accueil" },
-      { "href": "/about", "label": "À propos de nous" },
+      { "href": "/about", "label": "À propos" },
       { "href": "/programs", "label": "Programmes" },
-      { "href": "/impact", "label": "Notre impact" },
+      { "href": "/impact", "label": "Impact" },
       { "href": "/partners", "label": "Partenaires" },
-      { "href": "/future-goals", "label": "Objectifs futurs" }
+      { "href": "/future-goals", "label": "Objectifs" },
+      { "href": "/contact", "label": "Contact" }
     ],
     "volunteer": "Bénévole",
     "donate": "Faire un don"
+  },"AboutPage": {
+    "HeroSection": {
+      "imageAlt": "Équipe ALLEN+ et membres de la communauté travaillant ensemble",
+      "title": "Notre histoire : Renforcer les communautés,",
+      "titleHighlight": "Préserver notre planète",
+      "description": "Découvrez la mission, la vision et les valeurs qui animent ALLEN+"
+    },
+    "MissionSection": {
+      "imageAlt": "Membres de la communauté engagés dans le développement durable",
+      "missionTitle": "Notre mission",
+      "title": "Favoriser un avenir résilient et",
+      "titleHighlight": " Durable",
+      "description": "ALLEN+ (Aid Life Learn Environment) se consacre à l'autonomisation des jeunes et des communautés vulnérables à travers des programmes innovants et pratiques en matière d'action climatique, d'agriculture durable, d'énergie renouvelable et de soutien humanitaire.",
+      "quote": "S'assurer que personne ne soit laissé pour compte dans notre chemin vers la durabilité."
+    },
+    "VisionSection": {
+      "imageAlt": "Vision d'un avenir durable avec des communautés prospères",
+      "visionTitle": "Notre vision",
+      "title": "Communautés autonomisées",
+      "titleHighlight": " Menant le changement",
+      "description": "Nous envisageons un monde où les communautés autonomisées dirigent activement la création de solutions durables aux défis environnementaux, où chaque individu a l'opportunité de prospérer et de contribuer à une planète plus saine.",
+      "quote": "Chaque individu mérite l'opportunité de prospérer et de contribuer à une planète plus saine."
+    },
+    "ValuesSection": {
+      "title": "Nos valeurs fondamentales",
+      "description": "Les principes qui guident chaque décision, chaque programme et chaque partenariat",
+      "valuesAlt": "{title} en action",
+      "values": {
+        "communityEmpowerment": {
+          "title": "Autonomisation communautaire",
+          "description": "Croire en la capacité des communautés locales à conduire un changement significatif"
+        },
+        "innovation": {
+          "title": "Innovation",
+          "description": "Favoriser des solutions créatives aux défis environnementaux complexes"
+        },
+        "sustainability": {
+          "title": "Durabilité",
+          "description": "Protéger l'environnement pour les générations actuelles et futures"
+        },
+        "inclusivity": {
+          "title": "Inclusivité",
+          "description": "S'assurer que les programmes atteignent et bénéficient aux plus vulnérables"
+        },
+        "collaboration": {
+          "title": "Collaboration",
+          "description": "Travailler avec des partenaires pour amplifier notre impact collectif"
+        },
+        "actionOriented": {
+          "title": "Orienté vers l'action",
+          "description": "Mettre l'accent sur la pratique concrète et les résultats tangibles"
+        }
+      }
+    },
+    "UniqueSection": {
+      "title": "Ce qui nous rend",
+      "titleHighlight": " Unique",
+      "imageAlt": "Jeunes menant le changement communautaire",
+      "points": {
+        "youthDriven": {
+          "title": "Changement porté par la jeunesse",
+          "description": "Nous croyons fermement que les jeunes peuvent conduire le changement, en mettant la pratique au cœur de tous les programmes."
+        },
+        "localFocus": {
+          "title": "Focus local, impact global",
+          "description": "Une compréhension approfondie des défis de l'est de la RDC permet des solutions durables et culturellement appropriées."
+        },
+        "practiceDriven": {
+          "title": "Programmes axés sur la pratique",
+          "description": "Chaque initiative se traduit par un impact concret grâce à une mise en œuvre pratique."
+        }
+      }
+    }
   }
   
 

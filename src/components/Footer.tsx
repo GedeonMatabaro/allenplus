@@ -1,13 +1,62 @@
 // app/components/Footer.jsx
-import { Leaf, Mail, MapPin } from "lucide-react";
+"use client";
+
+import { Leaf, Mail, MapPin, ArrowUp } from "lucide-react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 export default function Footer() {
   const t = useTranslations("Footer");
+  const pathname = usePathname();
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Handle scroll to show/hide back-to-top button
+  useEffect(() => {
+    const toggleVisibility = () => {
+      setIsVisible(window.scrollY > 300); // Show button after scrolling 300px
+    };
+    window.addEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
+  }, []);
+
+  // Fast but smooth scroll-to-top animation
+  const scrollToTop = () => {
+    const start = window.scrollY;
+    const startTime = performance.now();
+    const duration = 300; // 300ms for fast but smooth animation
+
+    const easeInOutQuad = (t:number) => (t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t);
+
+    const animateScroll = (currentTime:number) => {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1); // Cap at 1
+      const easedProgress = easeInOutQuad(progress);
+      window.scrollTo(0, start * (1 - easedProgress));
+
+      if (progress < 1) {
+        requestAnimationFrame(animateScroll);
+      }
+    };
+
+    requestAnimationFrame(animateScroll);
+  };
+
+  // Helper function to strip locale from pathname
+  const getBasePath = (path:string) => {
+    const parts = path.split("/").filter(Boolean);
+    // Remove the first part if it's a locale (e.g., en, es, fr)
+    return parts.length > 1 && ["en", "es", "fr"].includes(parts[0])
+      ? "/" + parts.slice(1).join("/")
+      : path;
+  };
+
+  // Get the base pathname without locale
+  const basePathname = getBasePath(pathname);
 
   return (
-    <footer className="bg-[#0f2810]/90 text-green-100">
+    <footer className="bg-[#0f2810]/90 text-green-100 relative">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Organization Info */}
@@ -40,16 +89,23 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-lg text-white mb-4">{t("quickLinks.title")}</h3>
             <ul className="space-y-3">
-              {["about", "programs", "impact", "partners", "futureGoals"].map((key) => (
-                <li key={key}>
-                  <Link
-                    href={`/${key.replace("futureGoals", "future-goals")}`}
-                    className="text-green-100 hover:text-[#FFC107] transition-colors duration-300 text-sm"
-                  >
-                    {t(`quickLinks.${key}`)}
-                  </Link>
-                </li>
-              ))}
+              {["about", "programs", "impact", "partners", "futureGoals"].map((key) => {
+                const href = `/${key.replace("futureGoals", "future-goals")}`;
+                return (
+                  <li key={key}>
+                    <Link
+                      href={href}
+                      className={
+                        basePathname === href
+                          ? "text-[#4CAF50] hover:text-[#FFC107] transition-colors duration-300 text-sm"
+                          : "text-green-100 hover:text-[#FFC107] transition-colors duration-300 text-sm"
+                      }
+                    >
+                      {t(`quickLinks.${key}`)}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
@@ -57,38 +113,38 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-lg text-white mb-4">{t("getInvolved.title")}</h3>
             <ul className="space-y-3">
-              <li>
-                <Link
-                  href="/contact"
-                  className="text-green-100 hover:text-[#FFC107] transition-colors duration-300 text-sm"
-                >
-                  {t("getInvolved.contact")}
-                </Link>
-              </li>
-              <li>
-                <a
-                  href="mailto:infosallenplus@gmail.com"
-                  className="text-green-100 hover:text-[#FFC107] transition-colors duration-300 text-sm"
-                >
-                  {t("getInvolved.partner")}
-                </a>
-              </li>
-              <li>
-                <Link
-                  href="/programs"
-                  className="text-green-100 hover:text-[#FFC107] transition-colors duration-300 text-sm"
-                >
-                  {t("getInvolved.volunteer")}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="text-green-100 hover:text-[#FFC107] transition-colors duration-300 text-sm"
-                >
-                  {t("getInvolved.donate")}
-                </Link>
-              </li>
+              {[
+                { href: "/contact", key: "contact" },
+                { href: "mailto:infosallenplus@gmail.com", key: "partner", isExternal: true },
+                { href: "/programs", key: "volunteer" },
+                { href: "/contact", key: "donate" },
+              ].map(({ href, key, isExternal }) => (
+                <li key={key}>
+                  {isExternal ? (
+                    <a
+                      href={href}
+                      className={
+                        basePathname === href
+                          ? "text-[#4CAF50] hover:text-[#FFC107] transition-colors duration-300 text-sm"
+                          : "text-green-100 hover:text-[#FFC107] transition-colors duration-300 text-sm"
+                      }
+                    >
+                      {t(`getInvolved.${key}`)}
+                    </a>
+                  ) : (
+                    <Link
+                      href={href}
+                      className={
+                        basePathname === href
+                          ? "text-[#4CAF50] hover:text-[#FFC107] transition-colors duration-300 text-sm"
+                          : "text-green-100 hover:text-[#FFC107] transition-colors duration-300 text-sm"
+                      }
+                    >
+                      {t(`getInvolved.${key}`)}
+                    </Link>
+                  )}
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -122,6 +178,17 @@ export default function Footer() {
           </div>
         </div>
       </div>
+
+      {/* Back to Top Button */}
+      {isVisible && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-6 right-6 p-3 bg-[#4CAF50] text-white rounded-full shadow-lg hover:bg-[#388E3C] hover:scale-110 transform transition-all duration-300 ease-in-out group z-50"
+          aria-label="Back to top"
+        >
+          <ArrowUp className="h-6 w-6 group-hover:-translate-y-1 transition-transform duration-300" />
+        </button>
+      )}
     </footer>
   );
 }

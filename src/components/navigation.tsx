@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 import LanguageSelect from "./LanguageSelect";
 import DarkModeToggleButton from "./darkModeToggle";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 interface NavigationProps {
   className?: string;
@@ -19,6 +20,7 @@ export function Navigation({ className }: NavigationProps) {
   const t = useTranslations("Navigation");
   const [isScrolled, setIsScrolled] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+  const pathname = usePathname();
 
   // Handle scroll effect
   React.useEffect(() => {
@@ -35,6 +37,19 @@ export function Navigation({ className }: NavigationProps) {
     label: t(`links.${t.raw("links").indexOf(link)}.label`),
   }));
 
+  // Helper function to strip locale from pathname
+  const getBasePath = (path: string) => {
+    const parts = path.split("/").filter(Boolean);
+    // Remove the first part if it's a locale (e.g., en, es, fr)
+    return parts.length > 1 && ["en", "es", "fr"].includes(parts[0])
+      ? "/" + parts.slice(1).join("/")
+      : path;
+  };
+  
+  // Get the base pathname without locale
+  const basePathname = getBasePath(pathname);
+  
+  const isHomePage = basePathname === "/" || (pathname.split("/").filter(Boolean).length === 1 && ["en", "es", "fr"].includes(pathname.split("/").filter(Boolean)[0]));
   return (
     <nav
       className={cn(
@@ -52,38 +67,51 @@ export function Navigation({ className }: NavigationProps) {
           )}
         >
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3 group">
+          <Link href="/" className="flex items-center space-x-2 group">
             <div className="relative">
-              <div className="flex h-14 w-14 items-center justify-center transition-all duration-300 group-hover:scale-105 p-0">
+              <div className="flex h-10 w-10 md:h-14 md:w-14 items-center justify-center transition-all duration-300 group-hover:scale-105 p-0">
                 <Image
                   src="/logo.png"
                   alt={t("logoAlt")}
                   fill
-                  className="h-14 w-14 object-contain"
+                  className="h-9 w-9 md:h-14 md:w-14 object-contain"
                 />
               </div>
             </div>
-            <div className="hidden sm:block w-24 group-hover:scale-105 transition-all duration-300">
+            <div className="hidden sm:block w-24 group-hover:scale-105 transition-all duration-300 lg:hidden xl:block">
               <div className="font-semibold text-sm text-gray-800 dark:text-gray-300">{t("tagline")}</div>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-5">
             {navigationLinks.map((link: { href: string; label: string }) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="relative text-gray-700 dark:text-gray-200 hover:text-green-600 dark:hover:text-green-300 font-medium transition-all duration-300 group py-2"
+               className={cn(
+                  "relative text-gray-700 dark:text-gray-200 font-medium transition-all duration-300 group py-2",
+                  link.href === "/" && isHomePage
+                    ? "text-green-600 dark:text-green-300"
+                    : basePathname === link.href
+                    ? "text-green-600 dark:text-green-300"
+                    : "hover:text-green-600 dark:hover:text-green-300"
+                )}
               >
                 {link.label}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-green-500 to-green-600 group-hover:w-full transition-all duration-300 rounded-full"></span>
+                <span
+                  className={cn(
+                    "absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-green-500 to-green-600 rounded-full",
+                    link.href === "/" && isHomePage ? "w-full" : basePathname === link.href ? "w-full" : "w-0 group-hover:w-full",
+                    "transition-all duration-300"
+                  )}
+                ></span>
               </Link>
             ))}
           </div>
 
           {/* Desktop Actions */}
-          <div className="hidden lg:flex items-center space-x-4">
+          <div className="hidden lg:flex items-center space-x-2">
             <LanguageSelect />
             <DarkModeToggleButton />
             {/* CTA Buttons */}
@@ -137,7 +165,14 @@ export function Navigation({ className }: NavigationProps) {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="block text-gray-700 dark:text-gray-200 hover:text-green-600 dark:hover:text-green-400 font-medium py-2 px-4 rounded-xl hover:bg-green-50 dark:hover:bg-green-900/20 transition-all duration-300"
+                   className={cn(
+                    "block font-medium py-2 px-4 rounded-xl transition-all duration-300",
+                    link.href === "/" && isHomePage
+                      ? "text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/20"
+                      : basePathname === link.href
+                      ? "text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/20"
+                      : "text-gray-700 dark:text-gray-200 hover:text-green-600 dark:hover:text-green-400 hover:bg-green-50 dark:hover:bg-green-900/20"
+                  )}
                 >
                   {link.label}
                 </Link>
