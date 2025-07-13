@@ -172,7 +172,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="text-[#FFC107] hover:underline transition-colors duration-300"
               >
-                Matabaro Tech
+                Matabaro Tech Ltd
               </a>
             </p>
           </div>

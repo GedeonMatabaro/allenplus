@@ -280,7 +280,257 @@
         }
       }
     }
+  },
+  "ContactPage": {
+    "HeroSection": {
+      "imageAlt": "Équipe ALLEN+ accueillant de nouveaux partenaires et collaborateurs",
+      "title": "Entrez en",
+      "titleHighlight": "Contact",
+      "description": "Prêt à rejoindre notre mission ? Nous serions ravis d'avoir de vos nouvelles et d'explorer comment nous pouvons travailler ensemble pour un changement durable."
+    },
+    "InfoSection": {
+      "title": "Connectez-vous avec ALLEN+",
+      "description": "Chaque conversation est un pas vers la construction d'un avenir plus durable ensemble.",
+      "emailTitle": "Email",
+      "emailResponse": "Nous répondons généralement dans les 24 à 48 heures",
+      "addressTitle": "Adresse",
+      "addressRegion": "Est de la République Démocratique du Congo",
+      "organizationTitle": "Organisation",
+      "organizationDescription": "Autonomiser les communautés depuis notre fondation",
+      "involvementTitle": "Façons de s'impliquer",
+      "involvements": {
+        "partner": "Collaborez avec nous sur des programmes communautaires",
+        "support": "Soutenez nos initiatives d'action climatique",
+        "volunteer": "Offrez vos compétences et votre expertise en tant que bénévole",
+        "donate": "Faites un don pour soutenir nos programmes",
+        "collaborate": "Collaborez sur la recherche et l'innovation",
+        "advocacy": "Rejoignez nos efforts de plaidoyer mondial"
+      }
+    },
+    "Form": {
+      "title": "Envoyez-nous un message",
+      "description": "Remplissez le formulaire ci-dessous et nous vous répondrons dès que possible.",
+      "labels": {
+        "firstName": "Nom complet *",
+        "email": "Adresse email *",
+        "organization": "Organisation (facultatif)",
+        "subject": "Sujet *",
+        "message": "Message *"
+      },
+      "placeholders": {
+        "firstName": "Entrez votre nom complet",
+        "email": "Entrez votre adresse email",
+        "organization": "Entrez votre organisation (si applicable)",
+        "subject": "Entrez le sujet de votre message",
+        "message": "Parlez-nous de votre intérêt à collaborer avec ALLEN+ ou de la manière dont vous souhaitez vous impliquer..."
+      },
+      "buttons": {
+        "sendMessage": "Envoyer le message"
+      },
+      "error": {
+        "required": "Ce champ est requis",
+        "invalidEmail": "Adresse email invalide",
+        "maxLength": "L'entrée dépasse la longueur maximale",
+        "allFieldsRequired": "Tous les champs requis doivent être remplis",
+        "genericError": "Une erreur s'est produite, veuillez réessayer plus tard",
+        "sendFailed": "Échec de l'envoi de l'email"
+      },
+      "toast": {
+        "success": {
+          "title": "Message envoyé",
+          "description": "Merci de nous avoir contactés ! Nous vous répondrons dans les 24 à 48 heures."
+        },
+        "error": {
+          "title": "Erreur",
+          "description": "Échec de l'envoi du message. Veuillez réessayer."
+        }
+      }
+    },
+    "ThankYouSection": {
+      "imageAlt": "Membres de la communauté exprimant gratitude et espoir",
+      "title": "Merci pour votre",
+      "titleHighlight": " Intérêt",
+      "description": "Chaque message, demande de partenariat et expression de soutien nous rapproche de notre objectif de créer un changement durable dans l'est de la RDC et au-delà. Nous apprécions votre engagement à faire une différence.",
+      "quote": "Ensemble, nous pouvons accomplir plus que nous ne pourrions jamais seuls.",
+      "quoteAuthor": "— Équipe ALLEN+"
+    },
+    "ExpectSection": {
+      "title": "À quoi s'attendre",
+      "description": "Notre engagement envers des connexions significatives et des réponses rapides",
+      "expectations": {
+        "quickResponse": {
+          "title": "Réponse rapide",
+          "description": "Nous répondons généralement dans les 24 à 48 heures à toutes les demandes"
+        },
+        "globalImpact": {
+          "title": "Impact global",
+          "description": "Votre soutien crée des effets d'entraînement dans les communautés du monde entier"
+        },
+        "personalConnection": {
+          "title": "Connexion personnelle",
+          "description": "Nous valorisons la construction de relations significatives et durables"
+        }
+      }
+    },
+    "JoinCommunitySection": {
+      "imageAlt": "Communauté ALLEN+ célébrant ensemble, montrant unité et espoir",
+      "title": "Rejoignez notre communauté",
+      "description": "Chaque partenariat, chaque conversation, chaque vision partagée nous rapproche d'un avenir durable pour tous.",
+      "callToAction": "Prêt à faire partie de quelque chose de plus grand ? Commençons la conversation aujourd'hui.",
+      "highlights": {
+        "growing": {
+          "title": "En croissance",
+          "description": "Réseau de partenaires"
+        },
+        "expanding": {
+          "title": "En expansion",
+          "description": "Portée mondiale"
+        },
+        "creating": {
+          "title": "Créant",
+          "description": "Changement durable"
+        }
+      }
+    }
+  },
+  "Email": {
+    "error": {
+      "sendFailed": "Échec de l'envoi de l'email"
+    },
+    "NgoContactTemplate": {
+      "heading": "Nouvelle soumission de formulaire de contact",
+      "intro": "Une nouvelle soumission de formulaire de contact a été reçue depuis le site web ALLEN+.",
+      "nameLabel": "Nom",
+      "emailLabel": "Email",
+      "organizationLabel": "Organisation",
+      "subjectLabel": "Sujet",
+      "messageLabel": "Message",
+      "responsePrompt": "Veuillez examiner et répondre à cette demande dès que possible.",
+      "footer": "Envoyé depuis ALLEN+ (Aid Life Learn Environment)"
+    },
+    "UserContactTemplate": {
+      "subject": "Merci de contacter ALLEN+",
+      "heading": "Merci pour votre message",
+      "greeting": "Cher {firstName},",
+      "intro": "Nous avons reçu votre message et apprécions votre prise de contact avec ALLEN+ (Aid Life Learn Environment).",
+      "responsePrompt": "Notre équipe examinera votre demande et vous répondra dans les 24 à 48 heures.",
+      "footer": "Cordialement,<br>ALLEN+ (Aid Life Learn Environment)"
+    }
+  },
+  "DonationPage": {
+    "Hero": {
+      "imageAlt": "Enfants et familles bénéficiant des programmes ALLEN+ dans un cadre naturel",
+      "missionBadge": "Croître le changement ensemble",
+      "heading": {
+        "line1": "Nourrir demain avec",
+        "line2": "Votre soutien attentionné"
+      },
+      "description": "Comme des graines qui deviennent de grands arbres, votre contribution plante l'espoir dans les communautés de l'est de la RDC, favorisant le développement durable, l'autonomisation des jeunes et un avenir plus vert.",
+      "stats": {
+        "lives": {
+          "value": "10 000+",
+          "title": "Vies épanouies",
+          "description": "Communautés autonomisées"
+        },
+        "children": {
+          "value": "1 500+",
+          "title": "Enfants prospérant",
+          "description": "Futurs éclairés"
+        },
+        "youth": {
+          "value": "357+",
+          "title": "Jeunes leaders",
+          "description": "Champions du climat"
+        }
+      },
+      "cta": {
+        "button": "Commencer à faire changer les choses",
+        "secure": "100% sécurisé et déductible d'impôt"
+      },
+      "quote": {
+        "text": "Le meilleur moment pour planter un arbre était il y a 20 ans. Le deuxième meilleur moment est maintenant.",
+        "author": "— Ensemble, nous plantons des graines d'espoir"
+      }
+    },
+    "PaymentDetails": {
+      "title": "Détails de paiement",
+      "description": "Utilisez les méthodes suivantes pour faire votre don à la Fondation ALLEN+.",
+      "secure": "Méthodes de paiement sécurisées",
+      "trust": {
+        "ssl": "SSL 256 bits",
+        "taxDeductible": "Déductible des impôts",
+        "pci": "Conforme PCI"
+      }
+    },
+    "Impact": {
+      "title": "Pourquoi votre don compte",
+      "description": "Votre contribution finance directement nos trois programmes principaux qui créent un changement mesurable dans l'est de la RDC. Chaque dollar est soigneusement alloué pour maximiser l'impact et assurer un développement communautaire durable.",
+      "programs": {
+        "greenYouth": {
+          "title": "Forum des jeunes verts",
+          "description": "Autonomiser 234+ jeunes militants climatiques grâce à des programmes d'éducation et de plaidoyer.",
+          "impact": "40% des dons soutiennent l'éducation climatique des jeunes"
+        },
+        "solidarity": {
+          "title": "Solidarité +",
+          "description": "Soutenir 1 500+ enfants dans les camps de déplacés internes avec de l'éducation et un soutien émotionnel.",
+          "impact": "35% des dons fournissent un soutien direct aux enfants"
+        },
+        "innovation": {
+          "title": "Centre d'innovation",
+          "description": "Développer des solutions pour l'agriculture durable et les énergies renouvelables.",
+          "impact": "25% des dons financent des projets d'innovation"
+        }
+      },
+      "testimonial": {
+        "imageAlt": "Témoignage d'un membre de la communauté",
+        "quote": "Grâce à ALLEN+, mes enfants ont maintenant accès à l'éducation et j'ai appris des techniques d'agriculture durable qui ont doublé notre récolte. Votre soutien change vraiment des vies.",
+        "author": "Marie Uwimana",
+        "role": "Membre de la communauté, Goma"
+      },
+      "recognition": {
+        "title": "Impact reconnu",
+        "unep": "Certificat d'appréciation du Programme des Nations Unies pour l'environnement",
+        "cop": "Participation au plaidoyer mondial de la COP 29 et COP 16",
+        "community": "10 000+ membres de la communauté touchés"
+      }
+    },
+    "Support": {
+      "title": "Autres façons de soutenir ALLEN+",
+      "description": "Vous ne pouvez pas faire un don maintenant ? Il y a de nombreuses autres façons d'aider notre mission",
+      "cards": {
+        "volunteer": {
+          "title": "Offrez vos compétences",
+          "description": "Partagez votre expertise en éducation, technologie ou développement communautaire",
+          "button": "En savoir plus sur le bénévolat"
+        },
+        "awareness": {
+          "title": "Sensibiliser",
+          "description": "Partagez notre mission sur les réseaux sociaux et aidez-nous à atteindre plus de supporters",
+          "button": "Partager notre histoire"
+        },
+        "partnership": {
+          "title": "Partenariat d'entreprise",
+          "description": "Collaborez avec nous pour le développement durable et les initiatives de RSE",
+          "button": "Explorer les partenariats"
+        }
+      }
+    },
+    "FinalCta": {
+      "imageAlt": "Communauté célébrant un changement positif",
+      "title": "Chaque don crée des ondes de changement",
+      "description": "Rejoignez des milliers de supporters qui rendent le développement durable possible dans l'est de la RDC",
+      "button": "Faire un don maintenant"
+    }
+  },
+  "PaymentDetails": {
+    "title": "Détails de paiement",
+    "description": "Utilisez les méthodes suivantes pour faire votre don à la Fondation ALLEN+.",
+    "secure": "Méthodes de paiement sécurisées",
+    "trust": {
+      "ssl": "SSL 256 bits",
+      "taxDeductible": "Déductible des impôts",
+      "pci": "Conforme PCI"
+    }
   }
-  
-
 }

@@ -281,5 +281,257 @@
         }
       }
     }
+  },
+  "ContactPage": {
+    "HeroSection": {
+      "imageAlt": "ALLEN+ team welcoming new partners and collaborators",
+      "title": "Get in",
+      "titleHighlight": "Touch",
+      "description": "Ready to join our mission? We'd love to hear from you and explore how we can work together for sustainable change."
+    },
+    "InfoSection": {
+      "title": "Connect With ALLEN+",
+      "description": "Every conversation is a step toward building a more sustainable future together.",
+      "emailTitle": "Email",
+      "emailResponse": "We typically respond within 24-48 hours",
+      "addressTitle": "Address",
+      "addressRegion": "Eastern Democratic Republic of Congo",
+      "organizationTitle": "Organization",
+      "organizationDescription": "Empowering communities since our founding",
+      "involvementTitle": "Ways to Get Involved",
+      "involvements": {
+        "partner": "Partner with us on community programs",
+        "support": "Support our climate action initiatives",
+        "volunteer": "Volunteer your skills and expertise",
+        "donate": "Donate to support our programs",
+        "collaborate": "Collaborate on research and innovation",
+        "advocacy": "Join our global advocacy efforts"
+      }
+    },
+    "ThankYouSection": {
+      "imageAlt": "Community members expressing gratitude and hope",
+      "title": "Thank You for Your",
+      "titleHighlight": " Interest",
+      "description": "Every message, partnership inquiry, and expression of support brings us closer to our goal of creating sustainable change in Eastern DRC and beyond. We appreciate your commitment to making a difference.",
+      "quote": "Together, we can achieve more than we ever could alone.",
+      "quoteAuthor": "— ALLEN+ Team"
+    },
+    "ExpectSection": {
+      "title": "What to Expect",
+      "description": "Our commitment to meaningful connections and timely responses",
+      "expectations": {
+        "quickResponse": {
+          "title": "Quick Response",
+          "description": "We typically respond within 24-48 hours to all inquiries"
+        },
+        "globalImpact": {
+          "title": "Global Impact",
+          "description": "Your support creates ripple effects across communities worldwide"
+        },
+        "personalConnection": {
+          "title": "Personal Connection",
+          "description": "We value building meaningful, long-lasting relationships"
+        }
+      }
+    },
+    "JoinCommunitySection": {
+      "imageAlt": "ALLEN+ community celebrating together, showing unity and hope",
+      "title": "Join Our Community",
+      "description": "Every partnership, every conversation, every shared vision brings us closer to a sustainable future for all.",
+      "callToAction": "Ready to be part of something bigger? Let's start the conversation today.",
+      "highlights": {
+        "growing": {
+          "title": "Growing",
+          "description": "Network of Partners"
+        },
+        "expanding": {
+          "title": "Expanding",
+          "description": "Global Reach"
+        },
+        "creating": {
+          "title": "Creating",
+          "description": "Lasting Change"
+        }
+      }
+    },
+    "Form": {
+      "title": "Send Us a Message",
+      "description": "Fill out the form below, and we will get back to you as soon as possible.",
+      "labels": {
+        "firstName": "Full Name *",
+        "email": "Email Address *",
+        "organization": "Organization (optional)",
+        "subject": "Subject *",
+        "message": "Message *"
+      },
+      "placeholders": {
+        "firstName": "Enter your full name",
+        "email": "Enter your email address",
+        "organization": "Enter your organization (if applicable)",
+        "subject": "Enter the subject of your message",
+        "message": "Tell us about your interest in collaborating with ALLEN+ or how you would like to get involved..."
+      },
+      "buttons": {
+        "sendMessage": "Send Message"
+      },
+      "error": {
+        "required": "This field is required",
+        "invalidEmail": "Invalid email address",
+        "maxLength": "Input exceeds maximum length",
+        "allFieldsRequired": "All required fields must be filled",
+        "genericError": "Something went wrong, please try again later",
+        "sendFailed": "Failed to send email"
+      },
+      "toast": {
+        "success": {
+          "title": "Message Sent",
+          "description": "Thank you for contacting us! We will respond within 24-48 hours."
+        },
+        "error": {
+          "title": "Error",
+          "description": "Failed to send message. Please try again."
+        }
+      }
+    }
+  },
+  "Email": {
+    "error": {
+      "sendFailed": "Failed to send email"
+    },
+    "NgoContactTemplate": {
+      "heading": "New Contact Form Submission",
+      "intro": "A new contact form submission has been received from the ALLEN+ website.",
+      "nameLabel": "Name",
+      "emailLabel": "Email",
+      "organizationLabel": "Organization",
+      "subjectLabel": "Subject",
+      "messageLabel": "Message",
+      "responsePrompt": "Please review and respond to this inquiry as soon as possible.",
+      "footer": "Sent from ALLEN+ (Aid Life Learn Environment)"
+    },
+    "UserContactTemplate": {
+      "subject": "Thank You for Contacting ALLEN+",
+      "heading": "Thank You for Your Message",
+      "greeting": "Dear {firstName},",
+      "intro": "We have received your message and appreciate you reaching out to ALLEN+ (Aid Life Learn Environment).",
+      "responsePrompt": "Our team will review your inquiry and get back to you within 24-48 hours.",
+      "footer": "Best regards,<br>ALLEN+ (Aid Life Learn Environment)"
+    }
+  },
+  "DonationPage": {
+    "Hero": {
+      "imageAlt": "Children and families benefiting from ALLEN+ programs in a natural setting",
+      "missionBadge": "Growing Change Together",
+      "heading": {
+        "line1": "Nurture Tomorrow with",
+        "line2": "Your Caring Support"
+      },
+      "description": "Like seeds growing into mighty trees, your contribution plants hope in Eastern DRC communities, fostering sustainable development, empowering youth, and cultivating a greener future.",
+      "stats": {
+        "lives": {
+          "value": "10,000+",
+          "title": "Lives Flourishing",
+          "description": "Communities Empowered"
+        },
+        "children": {
+          "value": "1,500+",
+          "title": "Children Thriving",
+          "description": "Futures Brightened"
+        },
+        "youth": {
+          "value": "357+",
+          "title": "Youth Leaders",
+          "description": "Climate Champions"
+        }
+      },
+      "cta": {
+        "button": "Start Growing Change",
+        "secure": "100% Secure & Tax Deductible"
+      },
+      "quote": {
+        "text": "The best time to plant a tree was 20 years ago. The second best time is now.",
+        "author": "— Together, we plant seeds of hope"
+      }
+    },
+    "PaymentDetails": {
+      "title": "Payment Details",
+      "description": "Use the following methods to make your donation to ALLEN+ Foundation.",
+      "secure": "Secure Payment Methods",
+      "trust": {
+        "ssl": "256-bit SSL",
+        "taxDeductible": "Tax Deductible",
+        "pci": "PCI Compliant"
+      }
+    },
+    "Impact": {
+      "title": "Why Your Donation Matters",
+      "description": "Your contribution directly funds our three core programs that are creating measurable change across Eastern DRC. Every dollar is carefully allocated to maximize impact and ensure sustainable community development.",
+      "programs": {
+        "greenYouth": {
+          "title": "Green Youth Forum",
+          "description": "Empowering 234+ youth climate activists through education and advocacy programs.",
+          "impact": "40% of donations support youth climate education"
+        },
+        "solidarity": {
+          "title": "Solidarity +",
+          "description": "Supporting 1,500+ children in IDP camps with education and emotional support.",
+          "impact": "35% of donations provide direct child support"
+        },
+        "innovation": {
+          "title": "Innovation Hub",
+          "description": "Developing sustainable agriculture and renewable energy solutions.",
+          "impact": "25% of donations fund innovation projects"
+        }
+      },
+      "testimonial": {
+        "imageAlt": "Community member testimonial",
+        "quote": "Thanks to ALLEN+, my children now have access to education and I've learned sustainable farming techniques that have doubled our harvest. Your support truly changes lives.",
+        "author": "Marie Uwimana",
+        "role": "Community Member, Goma"
+      },
+      "recognition": {
+        "title": "Recognized Impact",
+        "unep": "UN Environment Programme Certificate of Appreciation",
+        "cop": "COP 29 & COP 16 Global Advocacy Participation",
+        "community": "10,000+ Community Members Reached"
+      }
+    },
+    "Support": {
+      "title": "Other Ways to Support ALLEN+",
+      "description": "Can't donate right now? There are many other ways to help our mission",
+      "cards": {
+        "volunteer": {
+          "title": "Volunteer Your Skills",
+          "description": "Share your expertise in education, technology, or community development",
+          "button": "Learn About Volunteering"
+        },
+        "awareness": {
+          "title": "Spread Awareness",
+          "description": "Share our mission on social media and help us reach more supporters",
+          "button": "Share Our Story"
+        },
+        "partnership": {
+          "title": "Corporate Partnership",
+          "description": "Partner with us for sustainable development and CSR initiatives",
+          "button": "Explore Partnerships"
+        }
+      }
+    },
+    "FinalCta": {
+      "imageAlt": "Community celebrating positive change",
+      "title": "Every Donation Creates Ripples of Change",
+      "description": "Join thousands of supporters who are making sustainable development possible in Eastern DRC",
+      "button": "Donate Now"
+    }
+  },
+  "PaymentDetails": {
+    "title": "Payment Details",
+    "description": "Use the following methods to make your donation to ALLEN+ Foundation.",
+    "secure": "Secure Payment Methods",
+    "trust": {
+      "ssl": "256-bit SSL",
+      "taxDeductible": "Tax Deductible",
+      "pci": "PCI Compliant"
+    }
   }
 }
