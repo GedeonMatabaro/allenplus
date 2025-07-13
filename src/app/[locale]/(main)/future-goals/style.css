@@ -1,0 +1,30 @@
+@keyframes colorCycle {
+  0% {
+    box-shadow: 0 0 0 3px #10B981; /* green-500 */
+  }
+  25% {
+    box-shadow: 0 0 0 3px #F59E0B; /* yellow-500 */
+  }
+  50% {
+    box-shadow: 0 0 0 3px #06B6D4; /* cyan-500 */
+  }
+  75% {
+    box-shadow: 0 0 0 3px #8B5CF6; /* violet-500 */
+  }
+  100% {
+    box-shadow: 0 0 0 3px #10B981; /* green-500 */
+  }
+}
+
+.animate-colorCycle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 78px; /* 64px (circle) + 4px (border) + 4px (gap) + 3px (ring thickness) + some buffer */
+  height: 78px;
+  border-radius: 50%;
+  animation: colorCycle 4s infinite linear;
+  z-index: -1;
+}

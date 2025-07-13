@@ -42,7 +42,7 @@ export function ValuesSection() {
       icon: <Heart className="h-6 w-6 text-white" />,
       title: t("values.inclusivity.title"),
       description: t("values.inclusivity.description"),
-      color: "purple",
+      color: "violet",
       image: "/inclusivity.jpg",
     },
     {

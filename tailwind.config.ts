@@ -58,6 +58,7 @@ const config: Config = {
         "allen-green": "#388E3C",
         "allen-yellow": "#FFC107",
         "allen-teal": "#4DD0E1",
+        "red": "#EE4B2B"
       },
       borderRadius: {
         lg: "var(--radius)",

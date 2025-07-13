@@ -56,7 +56,7 @@ export default function ImpactPage() {
                 icon: Heart,
                 number: "105+",
                 label: "Women empowered through our initiatives",
-                color: "purple",
+                color: "violet",
                 image: "/placeholder.svg?height=200&width=300",
               },
               {
@@ -257,12 +257,12 @@ export default function ImpactPage() {
               <CardContent className="p-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <div className="text-3xl font-bold text-purple-600">50+</div>
+                    <div className="text-3xl font-bold text-violet-600">50+</div>
                     <p className="text-gray-600">Events Organized</p>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Heart className="h-5 w-5 text-purple-500" />
-                    <span className="text-purple-600 font-semibold">Community Unity</span>
+                    <Heart className="h-5 w-5 text-violet-500" />
+                    <span className="text-violet-600 font-semibold">Community Unity</span>
                   </div>
                 </div>
               </CardContent>

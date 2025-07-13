@@ -188,7 +188,7 @@
         {
           "value": "205+",
           "label": "Women Empowered",
-          "color": "purple"
+          "color": "violet"
         }
       ]
     }
@@ -532,6 +532,143 @@
       "ssl": "256-bit SSL",
       "taxDeductible": "Tax Deductible",
       "pci": "PCI Compliant"
+    }
+  },
+  "Goals": {
+    "HeroSection": {
+      "title": "Our Vision for the",
+      "titleHighlight": "Future",
+      "description": "Building tomorrow's solutions today through innovation and digital transformation",
+      "imageAlt": "Digital connectivity and future technology empowering communities"
+    },
+    "PlatformVision": {
+      "label": "Digital Innovation",
+      "title": "Comprehensive Digital",
+      "titleHighlight": "Platform Vision",
+      "description": "We are planning to create a revolutionary digital platform that will transform how we connect with our beneficiaries and deliver our services across Eastern DRC and beyond.",
+      "impactTitle": "Expected Impact",
+      "impactDescription": "This digital transformation will enable us to scale our impact exponentially, reaching communities with vital resources, education, and real-time support.",
+      "reachValue": "10x",
+      "reachTitle": "Projected Reach Increase",
+      "reachDescription": "Through digital connectivity",
+      "imageAlt": "Digital platform connecting communities across Eastern DRC"
+    },
+    "PlatformFeatures": {
+      "title": "Platform Features & Capabilities",
+      "description": "Innovative tools for community empowerment and connection",
+      "features": [
+        {
+          "title": "Beneficiary Network",
+          "description": "Connect all beneficiaries in a unified digital community for peer-to-peer learning",
+          "imageAlt": "Beneficiary network visualization"
+        },
+        {
+          "title": "Online Learning Hub",
+          "description": "Accessible courses covering climate action, agriculture, and community development",
+          "imageAlt": "Online learning hub visualization"
+        },
+        {
+          "title": "Climate Information System",
+          "description": "Real-time climate news, weather updates, and agricultural guidance for farmers",
+          "imageAlt": "Climate information system visualization"
+        },
+        {
+          "title": "Mobile Accessibility",
+          "description": "Mobile-friendly design reaching users in remote areas with basic smartphones",
+          "imageAlt": "Mobile accessibility visualization"
+        },
+        {
+          "title": "Partnership Integration",
+          "description": "Facilitate collaboration with stakeholders to amplify program effectiveness",
+          "imageAlt": "Partnership integration visualization"
+        },
+        {
+          "title": "Impact Tracking",
+          "description": "Real-time data collection and impact assessment tools for program monitoring",
+          "imageAlt": "Impact tracking visualization"
+        }
+      ]
+    },
+    "ImplementationRoadmap": {
+      "title": "Implementation Roadmap",
+      "description": "A visual journey from concept to community transformation",
+      "phases": [
+        {
+          "phase": "Phase 1",
+          "title": "Platform Development",
+          "description": "Design and develop core platform infrastructure, focusing on user experience and mobile accessibility for target communities.",
+          "timeline": "Months 1-6",
+          "imageAlt": "Platform development visualization"
+        },
+        {
+          "phase": "Phase 2",
+          "title": "Content Creation",
+          "description": "Develop comprehensive online courses, climate information systems, and educational resources tailored to local needs.",
+          "timeline": "Months 4-9",
+          "imageAlt": "Content creation visualization"
+        },
+        {
+          "phase": "Phase 3",
+          "title": "Community Integration",
+          "description": "Launch pilot programs with existing beneficiaries, gather feedback, and refine platform based on user experiences.",
+          "timeline": "Months 7-12",
+          "imageAlt": "Community integration visualization"
+        },
+        {
+          "phase": "Phase 4",
+          "title": "Scale & Partnership",
+          "description": "Expand platform reach through strategic partnerships and scale to serve communities across Eastern DRC and beyond.",
+          "timeline": "Months 10-18",
+          "imageAlt": "Scale and partnership visualization"
+        }
+      ]
+    },
+    "ProjectedImpact": {
+      "title": "Projected Impact",
+      "description": "Visualizing the transformation we'll create together",
+      "metrics": [
+        {
+          "value": "100,000+",
+          "title": "Connected Beneficiaries",
+          "description": "Across Eastern DRC and beyond"
+        },
+        {
+          "value": "500+",
+          "title": "Online Courses",
+          "description": "Covering all sustainability topics"
+        },
+        {
+          "value": "50+",
+          "title": "Partner Organizations",
+          "description": "Integrated into the platform"
+        }
+      ]
+    },
+    "CallToAction": {
+      "title": "Help Us Build the Future",
+      "description": "Our vision for a connected, empowered community requires support from partners, donors, and technology collaborators.",
+      "ctaText": "Join us in creating this transformative platform",
+      "partnerButton": "Partner With Us",
+      "partnersButton": "View Current Partners",
+      "imageAlt": "Bright future with connected communities and sustainable development"
+    },
+    "InnovationCommitment": {
+      "title": "Our Commitment to Innovation",
+      "description": "At ALLEN+, we believe that technology and innovation are powerful tools for social change. Our future goals reflect our commitment to leveraging digital solutions to amplify our impact, connect communities, and create sustainable pathways to development. Together, we're not just planning for the future – we're actively building it.",
+      "items": [
+        {
+          "title": "Technology for Good",
+          "description": "Leveraging digital solutions for social change"
+        },
+        {
+          "title": "Community Connection",
+          "description": "Building bridges across communities"
+        },
+        {
+          "title": "Sustainable Development",
+          "description": "Creating pathways to lasting change"
+        }
+      ]
     }
   }
 }

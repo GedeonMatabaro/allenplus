@@ -288,7 +288,7 @@ export default function PartnersPage() {
                 description:
                   "Long-term partnerships ensure that our programs have lasting impact and continue to benefit communities over time.",
                 image: "/placeholder.svg?height=300&width=400",
-                color: "purple",
+                color: "violet",
               },
             ].map((benefit, index) => (
               <div

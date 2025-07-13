@@ -17,7 +17,7 @@ export function ContactInfoSection() {
     { icon: Handshake, text: t("involvements.partner"), color: "green" },
     { icon: Target, text: t("involvements.support"), color: "yellow" },
     { icon: Users, text: t("involvements.volunteer"), color: "cyan" },
-    { icon: Heart, text: t("involvements.donate"), color: "purple" },
+    { icon: Heart, text: t("involvements.donate"), color: "violet" },
     { icon: Award, text: t("involvements.collaborate"), color: "gray" },
     { icon: Globe, text: t("involvements.advocacy"), color: "blue" },
   ];

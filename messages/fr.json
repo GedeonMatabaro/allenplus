@@ -188,7 +188,7 @@
         {
           "value": "205+",
           "label": "Femmes autonomisées",
-          "color": "purple"
+          "color": "violet"
         }
       ]
     }
@@ -531,6 +531,143 @@
       "ssl": "SSL 256 bits",
       "taxDeductible": "Déductible des impôts",
       "pci": "Conforme PCI"
+    }
+  },
+  "Goals": {
+    "HeroSection": {
+      "title": "Notre vision pour",
+      "titleHighlight": "l'Avenir",
+      "description": "Construire aujourd'hui les solutions de demain grâce à l'innovation et à la transformation numérique",
+      "imageAlt": "Connectivité numérique et technologie future pour autonomiser les communautés"
+    },
+    "PlatformVision": {
+      "label": "Innovation Numérique",
+      "title": "Vision de Plateforme",
+      "titleHighlight": "Numérique Complète",
+      "description": "Nous prévoyons de créer une plateforme numérique révolutionnaire qui transformera la manière dont nous nous connectons avec nos bénéficiaires et fournissons nos services dans l'est de la RDC et au-delà.",
+      "impactTitle": "Impact Attendu",
+      "impactDescription": "Cette transformation numérique nous permettra d'augmenter notre impact de manière exponentielle, en atteignant les communautés avec des ressources essentielles, de l'éducation et un soutien en temps réel.",
+      "reachValue": "10x",
+      "reachTitle": "Augmentation Projetée de la Portée",
+      "reachDescription": "Grâce à la connectivité numérique",
+      "imageAlt": "Plateforme numérique connectant les communautés dans l'est de la RDC"
+    },
+    "PlatformFeatures": {
+      "title": "Fonctionnalités et Capacités de la Plateforme",
+      "description": "Outils innovants pour l'autonomisation et la connexion des communautés",
+      "features": [
+        {
+          "title": "Réseau de Bénéficiaires",
+          "description": "Connecter tous les bénéficiaires dans une communauté numérique unifiée pour un apprentissage entre pairs",
+          "imageAlt": "Visualisation du réseau de bénéficiaires"
+        },
+        {
+          "title": "Centre d'Apprentissage en Ligne",
+          "description": "Cours accessibles sur l'action climatique, l'agriculture et le développement communautaire",
+          "imageAlt": "Visualisation du centre d'apprentissage en ligne"
+        },
+        {
+          "title": "Système d'Information Climatique",
+          "description": "Actualités climatiques en temps réel, mises à jour météorologiques et conseils agricoles pour les agriculteurs",
+          "imageAlt": "Visualisation du système d'information climatique"
+        },
+        {
+          "title": "Accessibilité Mobile",
+          "description": "Conception adaptée aux mobiles pour atteindre les utilisateurs dans les zones reculées avec des smartphones de base",
+          "imageAlt": "Visualisation de l'accessibilité mobile"
+        },
+        {
+          "title": "Intégration des Partenariats",
+          "description": "Faciliter la collaboration avec les parties prenantes pour amplifier l'efficacité des programmes",
+          "imageAlt": "Visualisation de l'intégration des partenariats"
+        },
+        {
+          "title": "Suivi de l'Impact",
+          "description": "Outils de collecte de données en temps réel et d'évaluation de l'impact pour le suivi des programmes",
+          "imageAlt": "Visualisation du suivi de l'impact"
+        }
+      ]
+    },
+    "ImplementationRoadmap": {
+      "title": "Feuille de Route de Mise en Œuvre",
+      "description": "Un voyage visuel de la conception à la transformation communautaire",
+      "phases": [
+        {
+          "phase": "Phase 1",
+          "title": "Développement de la Plateforme",
+          "description": "Concevoir et développer l'infrastructure de base de la plateforme, en mettant l'accent sur l'expérience utilisateur et l'accessibilité mobile pour les communautés cibles.",
+          "timeline": "Mois 1-6",
+          "imageAlt": "Visualisation du développement de la plateforme"
+        },
+        {
+          "phase": "Phase 2",
+          "title": "Création de Contenu",
+          "description": "Développer des cours en ligne complets, des systèmes d'information climatique et des ressources éducatives adaptées aux besoins locaux.",
+          "timeline": "Mois 4-9",
+          "imageAlt": "Visualisation de la création de contenu"
+        },
+        {
+          "phase": "Phase 3",
+          "title": "Intégration Communautaire",
+          "description": "Lancer des programmes pilotes avec les bénéficiaires existants, recueillir des retours et affiner la plateforme en fonction des expériences des utilisateurs.",
+          "timeline": "Mois 7-12",
+          "imageAlt": "Visualisation de l'intégration communautaire"
+        },
+        {
+          "phase": "Phase 4",
+          "title": "Échelle & Partenariat",
+          "description": "Élargir la portée de la plateforme grâce à des partenariats stratégiques et étendre les services aux communautés de l'est de la RDC et au-delà.",
+          "timeline": "Mois 10-18",
+          "imageAlt": "Visualisation de l'échelle et du partenariat"
+        }
+      ]
+    },
+    "ProjectedImpact": {
+      "title": "Impact Projeté",
+      "description": "Visualiser la transformation que nous créerons ensemble",
+      "metrics": [
+        {
+          "value": "100 000+",
+          "title": "Bénéficiaires Connectés",
+          "description": "Dans l'est de la RDC et au-delà"
+        },
+        {
+          "value": "500+",
+          "title": "Cours en Ligne",
+          "description": "Couvrant tous les sujets de durabilité"
+        },
+        {
+          "value": "50+",
+          "title": "Organisations Partenaires",
+          "description": "Intégrées dans la plateforme"
+        }
+      ]
+    },
+    "CallToAction": {
+      "title": "Aidez-nous à Construire l'Avenir",
+      "description": "Notre vision d'une communauté connectée et autonomisée nécessite le soutien de partenaires, de donateurs et de collaborateurs technologiques.",
+      "ctaText": "Joignez-vous à nous pour créer cette plateforme transformative",
+      "partnerButton": "Devenez Partenaire",
+      "partnersButton": "Voir les Partenaires Actuels",
+      "imageAlt": "Un avenir radieux avec des communautés connectées et un développement durable"
+    },
+    "InnovationCommitment": {
+      "title": "Notre Engagement envers l'Innovation",
+      "description": "Chez ALLEN+, nous croyons que la technologie et l'innovation sont des outils puissants pour le changement social. Nos objectifs futurs reflètent notre engagement à utiliser des solutions numériques pour amplifier notre impact, connecter les communautés et créer des voies durables vers le développement. Ensemble, nous ne planifions pas seulement l'avenir – nous le construisons activement.",
+      "items": [
+        {
+          "title": "Technologie pour le Bien",
+          "description": "Utiliser des solutions numériques pour le changement social"
+        },
+        {
+          "title": "Connexion Communautaire",
+          "description": "Construire des ponts entre les communautés"
+        },
+        {
+          "title": "Développement Durable",
+          "description": "Créer des voies vers un changement durable"
+        }
+      ]
     }
   }
 }

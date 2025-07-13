@@ -33,7 +33,7 @@ export function StatisticsSection() {
         { value: `${(donations + partnerships).toLocaleString()}+`, label: t("stats.0.label"), color: "green" },
         { value: "1.5K+", label: t("stats.1.label"), color: "yellow" },
         { value: "357+", label: t("stats.2.label"), color: "cyan" },
-        { value: "105+", label: t("stats.3.label"), color: "purple" },
+        { value: "105+", label: t("stats.3.label"), color: "violet" },
       ]);
     }
     fetchStats();
