@@ -14,10 +14,16 @@
       "languageKorean": "한국어",
       "languageItalian": "Italiano"
   },
-   "NotFound": {
-      "heading": "Page non trouvée",
-      "description": "La page que vous recherchez n'existe pas.",
-      "goHome": "Aller à l'accueil"
+  "NotFound": {
+    "errorCode": "404",
+    "title": "Page Non Trouvée",
+    "titleHighlight": "Perdu dans l'Espace ?",
+    "description": "Il semble que vous vous soyez aventuré en territoire inconnu. Laissez-nous vous ramener à notre mission de changement durable.",
+    "ctaButton": "Retourner à l'Accueil",
+    "cardTitle": "Découvrez Notre Mission",
+    "cardDescription": "Découvrez comment nous autonomisons les communautés et promouvons la durabilité dans l'est de la RDC.",
+    "imageAlt": "Visualisation futuriste d'une connexion perdue",
+    "accessibilityDescription": "Une page d'erreur 404 avec un design futuriste, comprenant un texte '404' animé, un message sur la page manquante, un bouton pour retourner à l'accueil, et une carte avec une image et une description de notre mission."
   },
   "Footer": {
     "tagline": "Aid Life Learn Environment",
@@ -668,6 +674,287 @@
           "description": "Créer des voies vers un changement durable"
         }
       ]
+    }
+  },
+  "Impact": {
+    "HeroSection": {
+      "title": "Notre Impact :",
+      "titleHighlight": "Créer un Changement Durable",
+      "description": "Mesurer nos progrès et célébrer les communautés que nous avons autonomisées",
+      "imageAlt": "Communautés transformées par les programmes ALLEN+"
+    },
+    "ImpactStatistics": {
+      "title": "En Chiffres",
+      "stats": [
+        {
+          "number": "123+",
+          "label": "Jeunes directement impliqués dans le programme des Activistes Climatiques Jeunes",
+          "imageAlt": "Visualisation du programme des activistes climatiques jeunes"
+        },
+        {
+          "number": "234",
+          "label": "Jeunes impliqués dans le programme de l'Académie Verte en tant qu'activistes climatiques",
+          "imageAlt": "Visualisation du programme de l'Académie Verte"
+        },
+        {
+          "number": "105+",
+          "label": "Femmes autonomisées grâce à nos initiatives",
+          "imageAlt": "Visualisation des initiatives d'autonomisation des femmes"
+        },
+        {
+          "number": "10 000+",
+          "label": "Membres de la communauté atteints par des campagnes et des sensibilisations",
+          "imageAlt": "Visualisation des campagnes communautaires"
+        }
+      ]
+    },
+    "GlobalAdvocacy": {
+      "title": "Amplifier les Voix sur la",
+      "titleHighlight": "Scène Mondiale",
+      "description": "Notre directeur exécutif, Chrispin Ngakani, a représenté les communautés mal desservies lors des COP 29 et COP 16, assurant que les voix de l'est de la RDC soient entendues dans les discussions climatiques internationales.",
+      "badge": "Plaidoyer Mondial",
+      "copTitle": "COP 29 & 16",
+      "copDescription": "Participation Internationale",
+      "point1Title": "Participation aux COP 29 & COP 16",
+      "point1Description": "Plaidoyer pour la justice climatique et des solutions menées par la communauté sur la scène mondiale",
+      "point2Title": "Reconnaissance Internationale",
+      "point2Description": "Apporter les perspectives de l'est de la RDC aux discussions sur les politiques climatiques mondiales",
+      "imageAlt": "Chrispin Ngakani à la conférence COP représentant l'est de la RDC"
+    },
+    "UNRecognition": {
+      "title": "Reconnaissance & Réalisations",
+      "description": "Honoré par des organisations internationales pour notre engagement envers la protection de l'environnement",
+      "label": "Reconnaissance Internationale",
+      "titleHighlight": "Programme des Nations Unies pour l'Environnement",
+      "titleHighlightSpan": "Certificat de Reconnaissance",
+      "descriptionDetail": "Reconnu par le Programme des Nations Unies pour l'Environnement pour notre contribution exceptionnelle à la protection de l'environnement et à l'autonomisation communautaire dans l'est de la RDC.",
+      "quote": "Dévouement exceptionnel au développement durable et à la gestion environnementale dans des circonstances difficiles.",
+      "quoteSource": "— Programme des Nations Unies pour l'Environnement",
+      "imageAlt": "Certificat de Reconnaissance du Programme des Nations Unies pour l'Environnement"
+    },
+    "CommunityEngagement": {
+      "title": "Engagement Communautaire en Action",
+      "description": "Histoires réelles, impact réel, changement réel se produisant tous les jours",
+      "stories": [
+        {
+          "title": "Campagnes de Sensibilisation",
+          "description": "Atteindre des milliers de personnes avec une éducation climatique et des pratiques durables",
+          "number": "10 000+",
+          "label": "Personnes Atteintes",
+          "iconLabel": "Impact Croissant",
+          "imageAlt": "Campagne de sensibilisation communautaire en cours"
+        },
+        {
+          "title": "Rassemblements Communautaires",
+          "description": "Renforcer les liens tout en partageant des connaissances environnementales",
+          "number": "50+",
+          "label": "Événements Organisés",
+          "iconLabel": "Unité Communautaire",
+          "imageAlt": "Rassemblement communautaire et célébration culturelle"
+        }
+      ]
+    },
+    "FutureCommitment": {
+      "title": "Notre Engagement Continue",
+      "description": "Chaque chiffre représente une vie touchée, une communauté autonomisée et un pas vers un avenir plus durable.",
+      "commitments": [
+        {
+          "highlight": "Croissant",
+          "label": "Portée Communautaire"
+        },
+        {
+          "highlight": "En Expansion",
+          "label": "Impact des Programmes"
+        },
+        {
+          "highlight": "Renforcement",
+          "label": "Partenariats Mondiaux"
+        }
+      ],
+      "imageAlt": "Avenir plein d'espoir avec des communautés prospères"
+    }
+  },
+  "Partners": {
+    "HeroSection": {
+      "title": "Nos précieux",
+      "titleHighlight": "Partenaires",
+      "description": "Ensemble, nous construisons des communautés plus fortes et un avenir plus durable",
+      "imageAlt": "Équipe ALLEN+ collaborant avec des partenaires internationaux"
+    },
+    "PartnershipPhilosophy": {
+      "title": "Collaboration pour un",
+      "titleHighlight": "Impact Plus Important",
+      "description": "Nos partenariats sont fondés sur des valeurs partagées de durabilité, d'autonomisation communautaire et de justice sociale. Avec nos partenaires, nous amplifions notre portée et approfondissons notre impact à travers l'est de la RDC et au-delà.",
+      "quote": "Seul, nous pouvons faire si peu ; ensemble, nous pouvons faire tellement.",
+      "quoteSource": "— Notre Philosophie de Partenariat",
+      "imageAlt": "Mains diverses se réunissant dans un partenariat"
+    },
+    "PartnerCategories": {
+      "title": "Catégories de Partenariats",
+      "description": "Collaborations diverses créant des solutions complètes",
+      "categories": [
+        {
+          "title": "Organisations Internationales",
+          "description": "Institutions mondiales apportant expertise et ressources aux communautés locales",
+          "imageAlt": "Collaboration avec des organisations internationales"
+        },
+        {
+          "title": "ONG Locales",
+          "description": "Organisations de base comprenant les besoins uniques des communautés",
+          "imageAlt": "ONG locales travaillant ensemble"
+        },
+        {
+          "title": "Agences Gouvernementales",
+          "description": "Mise en œuvre des politiques et soutien communautaire durable",
+          "imageAlt": "Réunions de partenariat gouvernemental"
+        }
+      ]
+    },
+    "PartnerLogos": {
+      "title": "Notre Réseau de Partenaires",
+      "logos": [
+        { "alt": "Logo du partenaire 1" },
+        { "alt": "Logo du partenaire 2" },
+        { "alt": "Logo du partenaire 3" },
+        { "alt": "Logo du partenaire 4" },
+        { "alt": "Logo du partenaire 5" },
+        { "alt": "Logo du partenaire 6" },
+        { "alt": "Logo du partenaire 7" },
+        { "alt": "Logo du partenaire 8" },
+        { "alt": "Logo du partenaire 9" },
+        { "alt": "Logo du partenaire 10" },
+        { "alt": "Logo du partenaire 11" },
+        { "alt": "Logo du partenaire 12" }
+      ]
+    },
+    "PartnershipImpact": {
+      "title": "Histoires de Réussite des Partenariats",
+      "description": "Collaborations réelles créant un changement mesurable",
+      "stories": [
+        {
+          "title": "Portée Élargie",
+          "description": "Partenariats stratégiques nous permettant d'atteindre plus de communautés à travers l'est de la RDC",
+          "imageAlt": "Mise en œuvre conjointe de projets avec un partenaire international",
+          "metric1Value": "5x",
+          "metric1Label": "Portée Accrue",
+          "metric2Value": "15+",
+          "metric2Label": "Nouvelles Communautés"
+        },
+        {
+          "title": "Partage de Ressources",
+          "description": "Mise en commun d'expertise et de ressources pour des solutions durables plus efficaces",
+          "imageAlt": "Partage de ressources et échange de connaissances",
+          "metric1Value": "3x",
+          "metric1Label": "Plus de Ressources",
+          "metric2Value": "100%",
+          "metric2Label": "Connaissances Partagées"
+        }
+      ]
+    },
+    "CallToPartnership": {
+      "title": "Devenez Notre Partenaire",
+      "description": "Rejoignez-nous pour créer un changement durable. Ensemble, nous pouvons accomplir plus que seuls.",
+      "ctaDescription": "Que vous soyez une organisation, une agence gouvernementale ou un individu souhaitant faire une différence, nous accueillons les partenariats alignés sur notre mission et nos valeurs.",
+      "ctaButton1": "Contactez-nous pour un Partenariat",
+      "ctaButton2": "Découvrez Nos Programmes",
+      "imageAlt": "Visualisation de partenariat collaboratif"
+    },
+    "PartnershipBenefits": {
+      "title": "Ce que Nos Partenariats Accomplissent",
+      "description": "Un voyage visuel de l'impact collaboratif",
+      "benefits": [
+        {
+          "title": "Portée Élargie",
+          "description": "Grâce à des partenariats stratégiques, nous pouvons atteindre plus de communautés et fournir des services à une population plus large à travers l'est de la RDC.",
+          "imageAlt": "Visualisation de la portée élargie"
+        },
+        {
+          "title": "Partage de Ressources",
+          "description": "Les efforts collaboratifs nous permettent de mettre en commun des ressources, de l'expertise et des connaissances pour créer des solutions durables plus efficaces.",
+          "imageAlt": "Visualisation du partage de ressources"
+        },
+        {
+          "title": "Innovation & Apprentissage",
+          "description": "Les partenariats favorisent l'innovation en réunissant des perspectives et des approches diverses face à des défis complexes.",
+          "imageAlt": "Visualisation de l'innovation et de l'apprentissage"
+        },
+        {
+          "title": "Impact Durable",
+          "description": "Les partenariats à long terme garantissent que nos programmes ont un impact durable et continuent de bénéficier aux communautés au fil du temps.",
+          "imageAlt": "Visualisation de l'impact durable"
+        }
+      ]
+    }
+  },
+  "Programs": {
+    "HeroSection": {
+      "title": "Nos Programmes :",
+      "titleHighlight": "Créer un Impact Durable",
+      "description": "Découvrez comment nous autonomisons les communautés grâce à des initiatives innovantes axées sur la pratique",
+      "imageAlt": "Programmes ALLEN+ en action dans les communautés"
+    },
+    "GreenYouthForum": {
+      "title": "Forum des Jeunes Verts",
+      "description": "Une plateforme dynamique pour les jeunes et les femmes pour s'engager dans des dialogues informatifs, partager des expériences et inspirer des solutions innovantes pour lutter contre le changement climatique.",
+      "imageAlt": "Jeunes participant à des discussions et activités sur l'action climatique",
+      "statsNumber": "234",
+      "statsLabel": "Activistes Climatiques",
+      "points": [
+        "Construction de réseaux aux niveaux local, national et international",
+        "Inspiration d'approches innovantes pour les défis environnementaux",
+        "Autonomisation du leadership des jeunes dans l'action climatique"
+      ]
+    },
+    "SolidarityPlus": {
+      "title": "Solidarité +",
+      "description": "Soutenir les enfants vivant dans les camps de personnes déplacées internes dans l'est de la RDC, renforcer la résilience, partager l'amour et susciter l'espoir dans les circonstances les plus difficiles.",
+      "imageAlt": "Enfants dans les camps de déplacés recevant du soutien et des soins",
+      "statsNumber": "1 500+",
+      "statsLabel": "Enfants Soutenus",
+      "statsDescription": "Renforcer la résilience et l'espoir dans les communautés de déplacés",
+      "impactTitle": "Espoir",
+      "impactLabel": "Restauré Quotidiennement",
+      "points": [
+        "Soutien émotionnel et renforcement communautaire",
+        "Activités éducatives et développement des compétences",
+        "Création d'espaces sûrs pour que les enfants prospèrent"
+      ]
+    },
+    "InnovationProgram": {
+      "title": "Innovation en Agriculture, Énergie Renouvelable et Recyclage",
+      "description": "Nous croyons que les jeunes peuvent être moteurs du changement, c'est pourquoi nous plaçons la pratique au centre de tous nos programmes. Ne laisser personne de côté tout en innovant pour un développement durable.",
+      "innovations": [
+        {
+          "title": "Agriculture Durable",
+          "description": "Techniques agricoles innovantes pour la sécurité alimentaire",
+          "imageAlt": "Pratiques agricoles durables en action"
+        },
+        {
+          "title": "Énergie Renouvelable",
+          "description": "Solutions d'énergie propre pour les communautés",
+          "imageAlt": "Solutions d'énergie renouvelable dans les communautés"
+        },
+        {
+          "title": "Innovation en Recyclage",
+          "description": "Transformer les déchets en ressources précieuses",
+          "imageAlt": "Initiatives de recyclage et d'économie circulaire"
+        }
+      ],
+      "practiceTitle": "Innovation Axée sur la Pratique",
+      "practiceDescription": "Notre approche place l'apprentissage pratique et l'application concrète au centre de chaque programme, garantissant un impact durable et une appropriation communautaire.",
+      "practiceImageAlt": "Membres de la communauté apprenant par la pratique",
+      "practicePoints": [
+        "Identification de projets menée par la communauté",
+        "Formation pratique et développement des compétences",
+        "Mise en œuvre et suivi durables"
+      ]
+    },
+    "CallToAction": {
+      "title": "Rejoignez Nos Programmes",
+      "description": "Prêt à participer au changement ? Impliquez-vous dès aujourd'hui dans nos programmes à fort impact.",
+      "ctaButton1": "S'Impliquer",
+      "ctaButton2": "Voir Notre Impact",
+      "imageAlt": "Membres de la communauté célébrant le succès des programmes"
     }
   }
 }

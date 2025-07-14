@@ -4,7 +4,7 @@
 import { useTranslations } from "next-intl";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
-
+import "./style.css"
 const phases = [
   { image: "/platformDevelopment.jpg", color: "green" },
   { image: "/contentCreation.webp", color: "yellow" },

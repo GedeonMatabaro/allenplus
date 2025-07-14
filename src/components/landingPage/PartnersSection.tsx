@@ -25,6 +25,11 @@ export function PartnersSection() {
     "/partner5.png",
     "/partner6.png",
     "/partner7.png",
+    "/partner8.png",
+    "/partner9.png",
+    "/partner10.png",
+    "/partner11.png",
+    "/partner12.png"
   ]);
 
   // Example: Fetch dynamic partners (uncomment to integrate with Prisma)
@@ -61,17 +66,17 @@ export function PartnersSection() {
 
   return (
     <section className="py-20 px-4 bg-card">
-      <div className="container mx-auto max-w-7xl">
-        <div className="text-center mb-16">
+      <div className="container mx-auto max-w-7xl px-2 md:px-4">
+        <div className="md:text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             {t("title")} <span className="text-green-600">{t("titleHighlight")}</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">{t("description")}</p>
         </div>
-        <div className="bg-green-700/20 rounded-2xl p-12 shadow-2xl mb-12">
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
+        <div className="bg-green-700/20 rounded-2xl mb:p-12 px-2 py-4 shadow-2xl mb-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 mb:gap-8 gap-4 items-center">
             {partners.map((src, index) => (
-              <div key={index} className="group flex items-center justify-center p-2 h-fit w-fit bg-white">
+              <div key={index} className="group flex items-center justify-center md:p-2 p-1 h-fit w-fit bg-white">
                 <Image
                   src={`/partners${src}`}
                   alt={t("partnerAlt", { index: index + 1 })}

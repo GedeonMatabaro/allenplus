@@ -15,9 +15,15 @@
       "languageItalian": "Italiano"
   },
   "NotFound": {
-      "heading": "Page Not Found",
-      "description": "The page you are looking for does not exist.",
-      "goHome": "Go to Home"
+    "errorCode": "404",
+    "title": "Page Not Found",
+    "titleHighlight": "Lost in Space?",
+    "description": "It seems you've ventured into uncharted territory. Let's guide you back to our mission of sustainable change.",
+    "ctaButton": "Return to Home",
+    "cardTitle": "Explore Our Mission",
+    "cardDescription": "Discover how we're empowering communities and driving sustainability in Eastern DRC.",
+    "imageAlt": "Futuristic visualization of a lost connection",
+    "accessibilityDescription": "A 404 error page with a futuristic design, featuring an animated '404' text, a message about the missing page, a button to return home, and a card with an image and description of our mission."
   },
   
   "Footer": {
@@ -669,6 +675,287 @@
           "description": "Creating pathways to lasting change"
         }
       ]
+    }
+  },
+  "Impact": {
+    "HeroSection": {
+      "title": "Our Impact:",
+      "titleHighlight": "Creating Lasting Change",
+      "description": "Measuring our progress and celebrating the communities we've empowered",
+      "imageAlt": "Communities transformed through ALLEN+ programs"
+    },
+    "ImpactStatistics": {
+      "title": "By the Numbers",
+      "stats": [
+        {
+          "number": "123+",
+          "label": "Young people directly engaged in Youth Climate Activists program",
+          "imageAlt": "Youth climate activists program visualization"
+        },
+        {
+          "number": "234",
+          "label": "Young people involved in Green Academy Program as climate activists",
+          "imageAlt": "Green Academy Program visualization"
+        },
+        {
+          "number": "105+",
+          "label": "Women empowered through our initiatives",
+          "imageAlt": "Women empowerment initiatives visualization"
+        },
+        {
+          "number": "10,000+",
+          "label": "Community members reached through campaigns and sensitization",
+          "imageAlt": "Community campaigns visualization"
+        }
+      ]
+    },
+    "GlobalAdvocacy": {
+      "title": "Amplifying Voices on the",
+      "titleHighlight": "Global Stage",
+      "description": "Our Executive Director, Chrispin Ngakani, has represented underserved communities at COP 29 and COP 16, ensuring that the voices of Eastern DRC are heard in international climate discussions.",
+      "badge": "Global Advocacy",
+      "copTitle": "COP 29 & 16",
+      "copDescription": "International Participation",
+      "point1Title": "COP 29 & COP 16 Participation",
+      "point1Description": "Advocating for climate justice and community-led solutions on the world stage",
+      "point2Title": "International Recognition",
+      "point2Description": "Bringing Eastern DRC perspectives to global climate policy discussions",
+      "imageAlt": "Chrispin Ngakani at COP conference representing Eastern DRC"
+    },
+    "UNRecognition": {
+      "title": "Recognition & Achievements",
+      "description": "Honored by international organizations for our commitment to environmental protection",
+      "label": "International Recognition",
+      "titleHighlight": "UN Environment Programme",
+      "titleHighlightSpan": "Certificate of Appreciation",
+      "descriptionDetail": "Recognized by the United Nations Environment Programme for our outstanding contribution to environmental protection and community empowerment in Eastern DRC.",
+      "quote": "Exceptional dedication to sustainable development and environmental stewardship in challenging circumstances.",
+      "quoteSource": "— UN Environment Programme",
+      "imageAlt": "UN Environment Programme Certificate of Appreciation"
+    },
+    "CommunityEngagement": {
+      "title": "Community Engagement in Action",
+      "description": "Real stories, real impact, real change happening every day",
+      "stories": [
+        {
+          "title": "Sensitization Campaigns",
+          "description": "Reaching thousands with climate education and sustainable practices",
+          "number": "10,000+",
+          "label": "People Reached",
+          "iconLabel": "Growing Impact",
+          "imageAlt": "Community sensitization campaign in progress"
+        },
+        {
+          "title": "Community Gatherings",
+          "description": "Strengthening bonds while sharing environmental knowledge",
+          "number": "50+",
+          "label": "Events Organized",
+          "iconLabel": "Community Unity",
+          "imageAlt": "Community gathering and cultural celebration"
+        }
+      ]
+    },
+    "FutureCommitment": {
+      "title": "Our Commitment Continues",
+      "description": "Every number represents a life touched, a community empowered, and a step toward a more sustainable future.",
+      "commitments": [
+        {
+          "highlight": "Growing",
+          "label": "Community Reach"
+        },
+        {
+          "highlight": "Expanding",
+          "label": "Program Impact"
+        },
+        {
+          "highlight": "Strengthening",
+          "label": "Global Partnerships"
+        }
+      ],
+      "imageAlt": "Hopeful future with thriving communities"
+    }
+  },
+  "Partners": {
+    "HeroSection": {
+      "title": "Our Valued",
+      "titleHighlight": "Partners",
+      "description": "Together, we're building stronger communities and a more sustainable future",
+      "imageAlt": "ALLEN+ team collaborating with international partners"
+    },
+    "PartnershipPhilosophy": {
+      "title": "Collaboration for",
+      "titleHighlight": "Greater Impact",
+      "description": "Our partnerships are built on shared values of sustainability, community empowerment, and social justice. Together with our partners, we amplify our reach and deepen our impact across Eastern DRC and beyond.",
+      "quote": "Alone we can do so little; together we can do so much.",
+      "quoteSource": "— Our Partnership Philosophy",
+      "imageAlt": "Diverse hands coming together in partnership"
+    },
+    "PartnerCategories": {
+      "title": "Partnership Categories",
+      "description": "Diverse collaborations creating comprehensive solutions",
+      "categories": [
+        {
+          "title": "International Organizations",
+          "description": "Global institutions bringing expertise and resources to local communities",
+          "imageAlt": "International organizations collaboration"
+        },
+        {
+          "title": "Local NGOs",
+          "description": "Grassroots organizations understanding unique community needs",
+          "imageAlt": "Local NGOs working together"
+        },
+        {
+          "title": "Government Agencies",
+          "description": "Policy implementation and sustainable community support",
+          "imageAlt": "Government partnership meetings"
+        }
+      ]
+    },
+    "PartnerLogos": {
+      "title": "Our Partner Network",
+      "logos": [
+        { "alt": "Partner 1 logo" },
+        { "alt": "Partner 2 logo" },
+        { "alt": "Partner 3 logo" },
+        { "alt": "Partner 4 logo" },
+        { "alt": "Partner 5 logo" },
+        { "alt": "Partner 6 logo" },
+        { "alt": "Partner 7 logo" },
+        { "alt": "Partner 8 logo" },
+        { "alt": "Partner 9 logo" },
+        { "alt": "Partner 10 logo" },
+        { "alt": "Partner 11 logo" },
+        { "alt": "Partner 12 logo" }
+      ]
+    },
+    "PartnershipImpact": {
+      "title": "Partnership Success Stories",
+      "description": "Real collaborations creating measurable change",
+      "stories": [
+        {
+          "title": "Expanded Reach",
+          "description": "Strategic partnerships enabling us to reach more communities across Eastern DRC",
+          "imageAlt": "Joint project implementation with international partner",
+          "metric1Value": "5x",
+          "metric1Label": "Increased Reach",
+          "metric2Value": "15+",
+          "metric2Label": "New Communities"
+        },
+        {
+          "title": "Resource Sharing",
+          "description": "Pooling expertise and resources for more effective sustainable solutions",
+          "imageAlt": "Resource sharing and knowledge exchange",
+          "metric1Value": "3x",
+          "metric1Label": "More Resources",
+          "metric2Value": "100%",
+          "metric2Label": "Shared Knowledge"
+        }
+      ]
+    },
+    "CallToPartnership": {
+      "title": "Become Our Partner",
+      "description": "Join us in creating sustainable change. Together, we can achieve more than we ever could alone.",
+      "ctaDescription": "Whether you're an organization, government agency, or individual looking to make a difference, we welcome partnerships that align with our mission and values.",
+      "ctaButton1": "Contact Us for Partnership",
+      "ctaButton2": "Explore Our Programs",
+      "imageAlt": "Collaborative partnership visualization"
+    },
+    "PartnershipBenefits": {
+      "title": "What Our Partnerships Achieve",
+      "description": "A visual journey of collaborative impact",
+      "benefits": [
+        {
+          "title": "Expanded Reach",
+          "description": "Through strategic partnerships, we can reach more communities and provide services to a broader population across Eastern DRC.",
+          "imageAlt": "Expanded reach visualization"
+        },
+        {
+          "title": "Resource Sharing",
+          "description": "Collaborative efforts allow us to pool resources, expertise, and knowledge to create more effective and sustainable solutions.",
+          "imageAlt": "Resource sharing visualization"
+        },
+        {
+          "title": "Innovation & Learning",
+          "description": "Partnerships foster innovation by bringing together diverse perspectives and approaches to complex challenges.",
+          "imageAlt": "Innovation and learning visualization"
+        },
+        {
+          "title": "Sustainable Impact",
+          "description": "Long-term partnerships ensure that our programs have lasting impact and continue to benefit communities over time.",
+          "imageAlt": "Sustainable impact visualization"
+        }
+      ]
+    }
+  },
+  "Programs": {
+    "HeroSection": {
+      "title": "Our Programs:",
+      "titleHighlight": "Creating Lasting Impact",
+      "description": "Discover how we're empowering communities through innovative, practice-driven initiatives",
+      "imageAlt": "ALLEN+ programs in action across communities"
+    },
+    "GreenYouthForum": {
+      "title": "Green Youth Forum",
+      "description": "A dynamic platform for youths and women to engage in informative dialogues, share experiences, and inspire innovative solutions to champion climate change.",
+      "imageAlt": "Youth engaged in climate action discussions and activities",
+      "statsNumber": "234",
+      "statsLabel": "Climate Activists",
+      "points": [
+        "Network building across local, national, and international levels",
+        "Inspiring innovative approaches to environmental challenges",
+        "Empowering youth leadership in climate action"
+      ]
+    },
+    "SolidarityPlus": {
+      "title": "Solidarity +",
+      "description": "Supporting children living in Eastern DRC Internally Displaced People Camps, building resilience, sharing love, and sparking hope in the most challenging circumstances.",
+      "imageAlt": "Children in IDP camps receiving support and care",
+      "statsNumber": "1,500+",
+      "statsLabel": "Children Supported",
+      "statsDescription": "Building resilience and hope in IDP communities",
+      "impactTitle": "Hope",
+      "impactLabel": "Restored Daily",
+      "points": [
+        "Emotional support and community building",
+        "Educational activities and skill development",
+        "Creating safe spaces for children to thrive"
+      ]
+    },
+    "InnovationProgram": {
+      "title": "Innovation in Agriculture, Renewable Energy, and Recycling",
+      "description": "We believe that young people can drive change, that's why we put practice at the center of all our programs. Leave no one behind as we innovate for sustainable development.",
+      "innovations": [
+        {
+          "title": "Sustainable Agriculture",
+          "description": "Innovative farming techniques for food security",
+          "imageAlt": "Sustainable agriculture practices in action"
+        },
+        {
+          "title": "Renewable Energy",
+          "description": "Clean energy solutions for communities",
+          "imageAlt": "Renewable energy solutions in communities"
+        },
+        {
+          "title": "Recycling Innovation",
+          "description": "Turning waste into valuable resources",
+          "imageAlt": "Recycling and circular economy initiatives"
+        }
+      ],
+      "practiceTitle": "Practice-Driven Innovation",
+      "practiceDescription": "Our approach puts hands-on learning and real-world application at the center of every program, ensuring sustainable impact and community ownership.",
+      "practiceImageAlt": "Community members learning through hands-on practice",
+      "practicePoints": [
+        "Community-led project identification",
+        "Hands-on training and skill development",
+        "Sustainable implementation and monitoring"
+      ]
+    },
+    "CallToAction": {
+      "title": "Join Our Programs",
+      "description": "Ready to be part of the change? Get involved in our impactful programs today.",
+      "ctaButton1": "Get Involved",
+      "ctaButton2": "See Our Impact",
+      "imageAlt": "Community members celebrating program success"
     }
   }
 }
