@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+
 // app/[locale]/contact/email.ts
 import nodemailer from "nodemailer";
 import { getTranslations } from "next-intl/server";
