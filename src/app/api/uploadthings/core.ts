@@ -22,13 +22,13 @@ export const fileRouter = {
     .onUploadComplete(async ({ metadata, file }) => {
       const oldAvatarUrl = metadata.user.avatarUrl;
       if (oldAvatarUrl) {
-        const key = oldAvatarUrl.split(`/a/${process.env.NEXT_PUBLIC_UPLOADTHING_APP_ID}/`)[1];
+        const key = oldAvatarUrl.split(`/a/kkwuwgj0u4/`)[1];
         await new UTApi().deleteFiles(key);
       }
 
-      const newAvatarUrl = file.url.includes(`${process.env.NEXT_PUBLIC_UPLOADTHING_APP_ID}.ufs.sh`)
-        ? file.url.replace(`${process.env.NEXT_PUBLIC_UPLOADTHING_APP_ID}.ufs.s`, "utfs.io")
-        : file.url.replace("/f/", `/a/${process.env.NEXT_PUBLIC_UPLOADTHING_APP_ID}/`);
+      const newAvatarUrl = file.url.includes(`kkwuwgj0u4.ufs.sh`)
+        ? file.url.replace(`kkwuwgj0u4.ufs.s`, "utfs.io")
+        : file.url.replace("/f/", `/a/$kkwuwgj0u4/`);
 
       await prisma.user.update({
           where: { id: metadata.user.id },
@@ -48,9 +48,9 @@ export const fileRouter = {
       return { userId: user.id }; // Added userId for media record
     })
     .onUploadComplete(async ({ metadata, file }) => {
-      const fixedUrl = file.url.includes("3lmord0xdw.ufs.sh")
-        ? file.url.replace(`${process.env.NEXT_PUBLIC_UPLOADTHING_APP_ID}.ufs.sh`, "utfs.io")
-        : file.url.replace("/f/", `/a/${process.env.NEXT_PUBLIC_UPLOADTHING_APP_ID}/`);
+      const fixedUrl = file.url.includes("kkwuwgj0u4.ufs.sh")
+        ? file.url.replace(`kkwuwgj0u4.ufs.sh`, "utfs.io")
+        : file.url.replace("/f/", `/a/kkwuwgj0u4/`);
 
       if (file.type.startsWith("audio")) {
         return { audioUrl: fixedUrl };
