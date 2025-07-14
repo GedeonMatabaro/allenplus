@@ -1,6 +1,6 @@
 // components/LanguageLoadingAnimation.tsx
 "use client";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, Variants } from "framer-motion";
 import { Globe } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { localeNames } from "@/i18n/routing";
@@ -22,7 +22,7 @@ export default function LanguageLoadingAnimation({ locale }: Props) {
   }, []);
 
   // Particle animation variants
-  const particleVariants = {
+  const particleVariants:Variants = {
     initial: { scale: 0, opacity: 0, x: 0, y: 0 },
     animate: (i: number) => ({
       scale: [0, 1, 0],
@@ -39,14 +39,28 @@ export default function LanguageLoadingAnimation({ locale }: Props) {
   };
 
   // Gradient background wave
-  const waveVariants = {
+  // const waveVariants = {
+  //   animate: {
+  //     background: [
+  //       "radial-gradient(circle, rgba(138,43,226,0.2), rgba(30,144,255,0.2), rgba(255,105,180,0.2))",
+  //       "radial-gradient(circle, rgba(30,144,255,0.2), rgba(255,105,180,0.2), rgba(138,43,226,0.2))",
+  //       "radial-gradient(circle, rgba(255,105,180,0.2), rgba(138,43,226,0.2), rgba(30,144,255,0.2))",
+  //     ],
+  //     transition: { duration: 3, repeat: Infinity, ease: "linear" },
+  //   },
+  // };
+  const waveVariants: Variants = {
     animate: {
       background: [
         "radial-gradient(circle, rgba(138,43,226,0.2), rgba(30,144,255,0.2), rgba(255,105,180,0.2))",
         "radial-gradient(circle, rgba(30,144,255,0.2), rgba(255,105,180,0.2), rgba(138,43,226,0.2))",
         "radial-gradient(circle, rgba(255,105,180,0.2), rgba(138,43,226,0.2), rgba(30,144,255,0.2))",
       ],
-      transition: { duration: 3, repeat: Infinity, ease: "linear" },
+      transition: {
+        duration: 3,
+        repeat: Infinity,
+        ease: "linear",
+      },
     },
   };
 
