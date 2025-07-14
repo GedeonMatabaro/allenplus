@@ -6,9 +6,9 @@ import type { Metadata } from "next"
 import { NextIntlClientProvider } from "next-intl"
 import { ThemeProvider } from "next-themes"
 import ReactQueryProvider from "./contextProviders/ReactQueryProvider";
-import { fileRouter } from "./api/uploadthing/core";
-import { extractRouterConfig } from "uploadthing/server";
-import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
+// import { fileRouter } from "./api/uploadthing/core";
+// import { extractRouterConfig } from "uploadthing/server";
+// import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,7 +38,6 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`} >
-        <NextSSRPlugin routerConfig={extractRouterConfig(fileRouter)} />
           <ReactQueryProvider>
             <ThemeProvider
               attribute="class" 
