@@ -45,6 +45,7 @@ export function ImpactSection() {
               width={700}
               height={600}
               className="rounded-2xl shadow-2xl"
+              priority
             />
             <div className="absolute -top-6 -right-6 bg-white p-4 rounded-xl shadow-2xl">
               <div className="flex items-center space-x-2">
