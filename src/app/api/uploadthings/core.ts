@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 // @/app/api/uploadthing/core.ts
 import { validateRequest } from "@/auth";
 import prisma from "@/lib/prisma";
