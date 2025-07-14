@@ -82,6 +82,7 @@ export function PartnersSection() {
                   width={120}
                   height={80}
                   className="transition-all duration-300 group-hover:scale-110"
+                  priority
                 />
               </div>
             ))}
