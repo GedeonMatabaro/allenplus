@@ -23,7 +23,7 @@ export function ProgramsSection() {
       title: t("programs.greenYouthForum.title"),
       description: t("programs.greenYouthForum.description"),
       icon: <Users className="h-6 w-6" />,
-      image: "/greenYF.jpg",
+      image: "/GYF.png",
       alt: t("programs.greenYouthForum.alt"),
     },
     {
@@ -77,6 +77,7 @@ export function ProgramsSection() {
                   alt={program.alt}
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  priority
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">

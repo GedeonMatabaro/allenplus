@@ -10,10 +10,10 @@ export function HeroSection() {
 
   return (
     <main className="mx-auto min-w-[320px]">
-      <section className="relative h-screen md:h-[80vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <div className="absolute top-0 inset-0 z-0">
           <Image
-            src="/home2.jpg"
+            src="/HomeHero.png"
             alt={t("imageAlt")}
             fill
             className="object-cover"

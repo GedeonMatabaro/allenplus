@@ -21,6 +21,7 @@ export function Navigation({ className }: NavigationProps) {
   const [isScrolled, setIsScrolled] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const pathname = usePathname();
+  const menuRef = React.useRef<HTMLDivElement>(null);
 
   // Handle scroll effect
   React.useEffect(() => {
@@ -31,6 +32,22 @@ export function Navigation({ className }: NavigationProps) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Handle click outside to close menu
+  React.useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    if (isMobileMenuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isMobileMenuOpen]);
+
   // Navigation links translated dynamically
   const navigationLinks = t.raw("links").map((link: { href: string; label: string }) => ({
     href: link.href,
@@ -40,16 +57,14 @@ export function Navigation({ className }: NavigationProps) {
   // Helper function to strip locale from pathname
   const getBasePath = (path: string) => {
     const parts = path.split("/").filter(Boolean);
-    // Remove the first part if it's a locale (e.g., en, es, fr)
     return parts.length > 1 && ["en", "es", "fr"].includes(parts[0])
       ? "/" + parts.slice(1).join("/")
       : path;
   };
   
-  // Get the base pathname without locale
   const basePathname = getBasePath(pathname);
-  
   const isHomePage = basePathname === "/" || (pathname.split("/").filter(Boolean).length === 1 && ["en", "es", "fr"].includes(pathname.split("/").filter(Boolean)[0]));
+
   return (
     <nav
       className={cn(
@@ -89,7 +104,7 @@ export function Navigation({ className }: NavigationProps) {
               <Link
                 key={link.href}
                 href={link.href}
-               className={cn(
+                className={cn(
                   "relative text-gray-700 dark:text-gray-200 font-medium transition-all duration-300 group py-2",
                   link.href === "/" && isHomePage
                     ? "text-green-600 dark:text-green-300"
@@ -114,7 +129,6 @@ export function Navigation({ className }: NavigationProps) {
           <div className="hidden lg:flex items-center space-x-2">
             <LanguageSelect />
             <DarkModeToggleButton />
-            {/* CTA Buttons */}
             <Button
               asChild
               variant="outline"
@@ -137,36 +151,40 @@ export function Navigation({ className }: NavigationProps) {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="lg:hidden flex items-center justify-end space-x-2">
+          <div className="lg:hidden flex items-center justify-end space-x-2 relative">
             <LanguageSelect />
+            <DarkModeToggleButton />
             <Button
               variant="ghost"
               size="sm"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="h-10 w-10 rounded-xl hover:bg-green-50 dark:hover:bg-green-900/20 transition-all duration-300"
+              className="h-10 w-10 rounded-xl hover:bg-green-50 dark:hover:bg-green-900/20 transition-all duration-300 z-50"
             >
               {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
           </div>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Dropdown Menu */}
         <div
+          ref={menuRef}
           className={cn(
-            "lg:hidden overflow-hidden transition-all duration-500 ease-in-out",
-            isMobileMenuOpen ? "max-h-screen opacity-100 pb-6" : "max-h-0 opacity-0"
+            "lg:hidden absolute top-full right-4 mt-2 w-64 transition-all duration-300 ease-in-out transform origin-top-right",
+            isMobileMenuOpen
+              ? "scale-y-100 opacity-100"
+              : "scale-y-0 opacity-0 pointer-events-none"
           )}
         >
-          <div className="bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl rounded-3xl shadow-2xl border border-green-100/50 dark:border-gray-700/50 p-8 mt-6 mx-4">
+          <div className="bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl rounded-xl shadow-2xl border border-green-100/50 dark:border-gray-700/50 p-6">
             {/* Mobile Navigation Links */}
-            <div className="space-y-4 mb-6">
+            <div className="space-y-2 mb-4">
               {navigationLinks.map((link: { href: string; label: string }) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                   className={cn(
-                    "block font-medium py-2 px-4 rounded-xl transition-all duration-300",
+                  className={cn(
+                    "block font-medium py-2 px-4 rounded-lg transition-all duration-300",
                     link.href === "/" && isHomePage
                       ? "text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/20"
                       : basePathname === link.href
@@ -180,13 +198,16 @@ export function Navigation({ className }: NavigationProps) {
             </div>
 
             {/* Mobile Accessibility Controls */}
-            <DarkModeToggleButton />
+            <div className="mb-4">
+              <DarkModeToggleButton />
+            </div>
+
             {/* Mobile CTA Buttons */}
-            <div className="space-y-3">
+            <div className="space-y-2">
               <Button
                 asChild
                 variant="outline"
-                className="w-full rounded-xl border-green-200 text-green-700 hover:bg-green-50 dark:border-green-700 dark:text-green-400 dark:hover:bg-green-900/20 transition-all duration-300"
+                className="w-full rounded-lg border-green-200 text-green-700 hover:bg-green-50 dark:border-green-700 dark:text-green-400 dark:hover:bg-green-900/20 transition-all duration-300"
               >
                 <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
                   <Users className="h-4 w-4 mr-2" />
@@ -195,7 +216,7 @@ export function Navigation({ className }: NavigationProps) {
               </Button>
               <Button
                 asChild
-                className="w-full rounded-xl bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 shadow-lg transition-all duration-300"
+                className="w-full rounded-lg bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 shadow-lg transition-all duration-300"
               >
                 <Link href="/donate" onClick={() => setIsMobileMenuOpen(false)}>
                   <Heart className="h-4 w-4 mr-2" />
