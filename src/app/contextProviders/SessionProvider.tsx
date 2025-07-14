@@ -3,7 +3,7 @@
 
 
 import { UserData } from "@/lib/types";
-import type { User, Session } from "@prisma/client";
+import type { Session } from "@prisma/client";
 import React, { createContext, useContext } from "react";
 
 
