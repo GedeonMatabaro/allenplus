@@ -22,10 +22,10 @@ export function HeroSection() {
           <div className="absolute top-0 inset-0 z-20 bg-black/40"></div>
         </div>
         <div className="relative z-10 text-center text-white px-4 max-w-4xl min-w-[320px]">
-          <h1 className="text-3xl md:text-7xl font-bold mb-6 leading-tight text-wrap">
+          <h1 className="text-3xl  md:text-5xl lg:text-7xl font-bold mb-6 leading-tight text-wrap">
             {t("title")} <span className="block text-yellow-400">{t("titleHighlight")}</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-100 max-w-3xl mx-auto">{t("description")}</p>
+          <p className="text-xl md:text-2xl mb-8 text-gray-100 max-w-3xl  mx-auto">{t("description")}</p>
           <Button
             asChild
             size="lg"
